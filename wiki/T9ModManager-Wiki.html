@@ -1,0 +1,2807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T9 Mod Manager Codex</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* ============================================================
+   T9 MOD MANAGER - WIKI
+   Painted in the launcher's own palette: red on near-black,
+   hairline panels, Consolas-shaped mono. Deliberately ONE
+   theme - this page is a piece of the tool it documents, and
+   the tool is dark red. Every colour is set explicitly so it
+   holds on any host ground.
+   ============================================================ */
+:root{
+  --ground:#08090B;
+  --panel:#0F1116;
+  --panel-2:#14161A;
+  --input:#101216;
+  --line:#23262C;
+  --line-soft:#1A1D22;
+  --red:#FB0A33;
+  --red-hi:#FF2649;
+  --red-dim:#8C0A22;
+  --amber:#E3B341;
+  --green:#27C24C;
+  --text:#E7E8EA;
+  --text-2:#C2C5CA;
+  --muted:#8A8F98;
+  --dim:#5A5E66;
+  --sans:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --cond:"IBM Plex Sans Condensed","IBM Plex Sans","Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{animation:none!important;transition:none!important;}}
+body{
+  margin:0;background:var(--ground);color:var(--text);
+  font-family:var(--sans);font-size:15px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--red);color:#fff;}
+
+/* ---------- shell ---------- */
+.shell{display:grid;grid-template-columns:270px minmax(0,1fr);min-height:100vh;}
+
+/* ---------- sidebar (the launcher's own) ---------- */
+.rail{
+  border-right:1px solid var(--line);background:var(--panel);
+  position:sticky;top:0;height:100vh;overflow-y:auto;
+  display:flex;flex-direction:column;
+}
+.brand{padding:22px 20px 16px;border-bottom:1px solid var(--line);}
+.mark{font-family:var(--cond);font-weight:700;font-size:25px;letter-spacing:1px;line-height:1;}
+.mark span{color:var(--red);}
+.mark{display:flex;flex-direction:column;align-items:center;gap:10px;}
+.brand{text-align:center;}
+.mark .logo{height:96px;width:auto;display:block;}
+.mark .word{color:var(--text);white-space:nowrap;}
+.brand p{margin:8px 0 0;font-family:var(--mono);font-size:10.5px;letter-spacing:1.6px;color:var(--dim);text-transform:uppercase;}
+.finder{padding:14px 16px;border-bottom:1px solid var(--line);}
+.finder input{
+  width:100%;background:var(--input);border:1px solid var(--line);color:var(--text);
+  font-family:var(--mono);font-size:12px;padding:9px 10px;outline:none;
+}
+.finder input:focus{border-color:var(--red);}
+.finder input::placeholder{color:var(--dim);}
+nav{padding:12px 0 40px;flex:1;}
+nav .grp{
+  font-family:var(--mono);font-size:10px;letter-spacing:1.7px;color:var(--dim);
+  text-transform:uppercase;padding:16px 20px 7px;
+}
+nav a{
+  display:block;padding:6px 20px 6px 19px;border-left:2px solid transparent;
+  color:var(--text-2);text-decoration:none;font-size:13.5px;
+}
+nav a:hover{color:#fff;background:var(--panel-2);}
+nav a.on{color:#fff;border-left-color:var(--red);background:var(--panel-2);}
+nav a:focus-visible{outline:2px solid var(--red);outline-offset:-2px;}
+nav a.hide{display:none;}
+nav .grp.hide{display:none;}
+
+/* ---------- content ---------- */
+main{padding:0 0 120px;min-width:0;}
+.masthead{
+  border-bottom:1px solid var(--line);padding:56px 48px 40px;
+  background:
+    radial-gradient(760px 240px at 8% -40%,rgba(251,10,51,.16),transparent 70%),
+    var(--ground);
+}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2.4px;color:var(--red);text-transform:uppercase;margin:0 0 14px;}
+h1{
+  font-family:var(--cond);font-weight:700;font-size:clamp(34px,4.6vw,58px);
+  line-height:1.02;margin:0;letter-spacing:-.4px;text-wrap:balance;max-width:19ch;
+}
+.standfirst{margin:20px 0 0;max-width:66ch;color:var(--text-2);font-size:17px;}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+.fact{
+  font-family:var(--mono);font-size:11px;letter-spacing:1.1px;text-transform:uppercase;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:6px 11px;
+}
+.fact b{color:var(--text);font-weight:500;}
+
+section{padding:52px 48px 0;max-width:1080px;}
+section > h2{
+  font-family:var(--cond);font-weight:700;font-size:29px;letter-spacing:.2px;
+  margin:0 0 6px;color:#fff;text-wrap:balance;
+}
+.rule{height:2px;background:var(--red);width:52px;margin:0 0 22px;}
+h3{font-family:var(--cond);font-weight:700;font-size:20px;margin:34px 0 8px;color:#fff;letter-spacing:.2px;}
+h4{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin:26px 0 8px;}
+p{margin:0 0 14px;max-width:70ch;}
+p.lede{color:var(--text-2);font-size:16px;}
+a{color:var(--red);}
+a:hover{color:var(--red-hi);}
+ul,ol{margin:0 0 16px;padding-left:20px;max-width:70ch;}
+li{margin:0 0 7px;}
+li::marker{color:var(--red-dim);}
+strong{color:#fff;font-weight:600;}
+code{font-family:var(--mono);font-size:.88em;color:var(--amber);background:var(--input);border:1px solid var(--line-soft);padding:1px 5px;}
+kbd{font-family:var(--mono);font-size:11px;color:var(--text);background:var(--panel-2);border:1px solid var(--line);border-bottom-width:2px;padding:1px 6px;white-space:nowrap;}
+h3 code,h2 code,li code strong{color:var(--amber);}
+
+/* ---------- panels ---------- */
+.panel{border:1px solid var(--line);background:var(--panel);padding:20px 22px;margin:0 0 20px;}
+.panel > :last-child{margin-bottom:0;}
+.panel-h{
+  font-family:var(--mono);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--red);margin:0 0 12px;
+}
+.note{border-left:2px solid var(--amber);background:rgba(227,179,65,.05);padding:14px 18px;margin:0 0 18px;}
+.note .panel-h{color:var(--amber);}
+.warn{border-left:2px solid var(--red);background:rgba(251,10,51,.06);padding:14px 18px;margin:0 0 18px;}
+.warn .panel-h{color:var(--red);}
+.ok{border-left:2px solid var(--green);background:rgba(39,194,76,.05);padding:14px 18px;margin:0 0 18px;}
+.ok .panel-h{color:var(--green);}
+
+/* ---------- code ---------- */
+pre{
+  font-family:var(--mono);font-size:12.5px;line-height:1.62;color:var(--text-2);
+  background:var(--input);border:1px solid var(--line);border-left:2px solid var(--red);
+  padding:16px 18px;margin:0 0 18px;overflow-x:auto;
+}
+pre .c{color:var(--dim);}
+pre .k{color:var(--red-hi);}
+pre .s{color:var(--green);}
+pre .m{color:var(--amber);}
+pre b{color:#fff;font-weight:600;}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;margin:0 0 20px;border:1px solid var(--line);}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px;}
+th{
+  text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:1.3px;
+  text-transform:uppercase;color:var(--muted);font-weight:500;
+  background:var(--panel-2);padding:10px 14px;border-bottom:1px solid var(--line);
+}
+td{padding:10px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:var(--text-2);}
+tr:last-child td{border-bottom:none;}
+td:first-child{color:var(--text);}
+td code{white-space:nowrap;}
+
+/* ---------- pipeline ---------- */
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;margin:0 0 20px;overflow-x:auto;padding-bottom:4px;}
+.step{
+  border:1px solid var(--line);background:var(--panel);padding:12px 15px;min-width:150px;flex:1 1 150px;
+}
+.step .n{font-family:var(--mono);font-size:10px;letter-spacing:1.4px;color:var(--red);display:block;margin-bottom:5px;}
+.step b{display:block;font-size:13.5px;color:#fff;font-weight:600;margin-bottom:3px;}
+.step span.d{font-size:12px;color:var(--muted);line-height:1.45;display:block;}
+.arrow{display:flex;align-items:center;color:var(--red-dim);padding:0 6px;font-family:var(--mono);font-size:14px;}
+
+/* ---------- side rules ---------- */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px;}
+@media (max-width:860px){.pair{grid-template-columns:1fr;}}
+
+.tag{
+  display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:1.2px;
+  text-transform:uppercase;padding:2px 7px;border:1px solid var(--line);color:var(--muted);
+  margin-right:6px;vertical-align:2px;
+}
+.tag.red{color:var(--red);border-color:var(--red-dim);}
+.tag.amber{color:var(--amber);border-color:#5c4a1c;}
+.tag.green{color:var(--green);border-color:#1e5c2e;}
+
+footer{
+  margin:80px 48px 0;padding:26px 0 0;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:11px;letter-spacing:1.1px;color:var(--dim);
+  text-transform:uppercase;max-width:1080px;
+}
+
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr;}
+  .rail{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}
+  nav{max-height:230px;overflow-y:auto;}
+  .masthead{padding:40px 24px 30px;}
+  section{padding:40px 24px 0;}
+  footer{margin:60px 24px 0;}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<aside class="rail">
+  <div class="brand">
+    <div class="mark"><img class="logo" src="data:image/png;base64,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" alt="T9" width="238" height="160"><span class="word">MOD MANAGER</span></div>
+    <p>Modder&#39;s Handbook</p>
+  </div>
+
+  <div class="finder">
+    <input id="filter" type="search" placeholder="Filter this wiki..." aria-label="Filter sections">
+  </div>
+
+  <nav id="nav">
+    <div class="grp">Start here</div>
+    <a href="#what">How modding works</a>
+    <a href="#first">Your first mod, start to finish</a>
+    <a href="#tour">The MOD TOOLS workspace</a>
+    <a href="#project">Projects: a mod is a folder</a>
+
+    <div class="grp">Writing GSC</div>
+    <a href="#language">The T9 GSC language</a>
+    <a href="#naming">Namespaces, names and traps</a>
+    <a href="#editor">The editor</a>
+
+    <div class="grp">Player settings</div>
+    <a href="#settings">The [[[ ]]] markers</a>
+    <a href="#presets">Presets</a>
+
+    <div class="grp">Building</div>
+    <a href="#pipeline">The build pipeline</a>
+    <a href="#linker">The linker</a>
+    <a href="#compiler">Compiling</a>
+    <a href="#errors">Reading compile errors</a>
+    <a href="#csc">Client scripts (.csc)</a>
+
+    <div class="grp">Running &amp; testing</div>
+    <a href="#load">Loading a mod into the game</a>
+    <a href="#guards">Where a mod is allowed to run</a>
+    <a href="#coauthor">Testing with co-authors</a>
+    <a href="#console">The console log</a>
+    <a href="#debug">When a mod does nothing</a>
+
+    <div class="grp">Cookbook</div>
+    <a href="#lifecycle">Timing and lifecycle</a>
+    <a href="#players">Players</a>
+    <a href="#world">Putting things in the world</a>
+    <a href="#fx">Effects, models and sound</a>
+    <a href="#zombies">Zombies and rounds</a>
+    <a href="#cant">What you cannot do</a>
+
+    <div class="grp">Publishing</div>
+    <a href="#submit">Submitting your mod</a>
+    <a href="#scanner">The security scanner</a>
+    <a href="#collab">Collaboration and sync</a>
+    <a href="#library">How your mod reaches players</a>
+
+    <div class="grp">Reference</div>
+    <a href="#research">Finding out how the game does it</a>
+    <a href="#hashes">Hashed names</a>
+    <a href="#triage">When something goes wrong</a>
+    <a href="#files">Files and folders</a>
+    <a href="#sides">.gsc vs .csc</a>
+    <a href="Script-API-Functions.html">Script API functions &#8599;</a>
+  </nav>
+</aside>
+
+<main>
+
+<header class="masthead">
+  <p class="eyebrow">Black Ops Cold War / T9 Modding</p>
+  <h1>Cold War Zombies Modding Wiki</h1>
+  <p class="standfirst">
+    This wiki will help you with everything you need to create your own Mod for Cold War Zombies.
+  </p>
+  <div class="facts">
+    <span class="fact">Language <b>GSC & CSC</b></span>
+    <span class="fact">Compiled <b>in the launcher</b></span>
+    <span class="fact">Runs <b>on map load</b></span>
+  </div>
+</header>
+
+<!-- ===================== WHAT ===================== -->
+<section id="what">
+  <h2>How modding works</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Cold War modding is nothing like Black Ops III. We do not have access to tools like Radiant, APE, LUA, etc.
+  </p>
+
+  <p>
+    Your mod is code-only. The launcher compiles it and hands it to the running game as if it
+    were one of the game&#39;s own scripts, which then loads it along with everything
+    else. It can call the same functions, use the same level variables and wait on the same flags.
+  </p>
+
+  <p>Three consequences follow, and they shape everything else in this handbook:</p>
+
+  <ul>
+    <li><strong>A mod ends up as one script.</strong> A project of nineteen files has to
+      become a single script before it can run. That is what the
+      <a href="#linker">linker</a> does, and it is why your function names get rewritten.</li>
+    <li><strong>It lasts one map load.</strong> Load a new map and your mod is gone.
+      Re-load it from the pre-game menu before every match.</li>
+    <li><strong>Nothing can be registered late.</strong> Clientfields, UI models,
+      weapons&#39; assets. Anything the game seals when the map loads is closed
+      to you. You can <em>use</em> what the game already declared, but you cannot declare a
+      new one. Half the <a href="#cant">cannot-do list</a> is this one fact wearing
+      different hats.</li>
+  </ul>
+
+  <div class="note">
+    <p class="panel-h">Familiar with GSC?</p>
+    <p>If you have written GSC for an earlier Call of Duty, most of it carries straight
+    over. Cold War&#39;s script VM grew out of the ones before it, so hashed
+    <code>#"istrings"</code>, <code>function autoexec</code>, ternaries and
+    struct-returning <code>waittill</code> all work the way you expect. The
+    <em>tools</em> do not carry over: no Radiant, no GDTs, no zone files, no
+    <code>share\raw</code> to edit. One syntax difference catches people straight away:
+    <code>#using</code> paths include the <code>.gsc</code> extension.</p>
+  </div>
+</section>
+
+<!-- ===================== FIRST ===================== -->
+<section id="first">
+  <h2>Your first mod, start to finish</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    In just 5 simple steps, you will have written, compiled and run your own mod.
+  </p>
+
+  <div class="flow">
+    <div class="step"><span class="n">STEP 1</span><b>New project</b><span class="d">MOD TOOLS &rsaquo; PROJECTS &rsaquo; NEW PROJECT. Name it, give it a thumbnail.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STEP 2</span><b>Write</b><span class="d">The template script is already open, already compiles, already prints.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STEP 3</span><b>Compile</b><span class="d">Compile button or Ctrl+B. Errors land in OUTPUT.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STEP 4</span><b>Inject</b><span class="d">Inject Button or Ctrl+F5 while you are in the Zombies main menu.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STEP 5</span><b>Play</b><span class="d">Start the match. Your print appears after the intro scene.</span></div>
+  </div>
+
+  <p>The starter script a new project gives you is a complete, working T9 mod:</p>
+
+<pre><span class="k">#using</span> scripts\core_common\flag_shared.gsc;
+
+<span class="k">#namespace</span> my_first_mod;
+
+<span class="k">function autoexec</span> main()
+{
+    level thread main_thread();
+}
+
+<span class="k">function private</span> main_thread()
+{
+    <span class="c">// nothing you print before this line will be seen</span>
+    level flag::wait_till(<span class="m">#"intro_scene_done"</span>);
+
+    IPrintLnBold(<span class="s">"Script Loaded"</span>);
+}</pre>
+
+  <p>Four T9 idioms are already in there, and all four matter:</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Line</th><th>What it is doing</th></tr></thead>
+    <tbody>
+      <tr><td><code>#using ...flag_shared.gsc;</code></td>
+          <td>Brings in the namespace whose functions you call as <code>flag::</code>.
+              <strong>The <code>.gsc</code> extension is required</strong>. Older
+              games omitted it, Cold War does not, and without it the include quietly resolves to
+              nothing.</td></tr>
+      <tr><td><code>#namespace my_first_mod;</code></td>
+          <td>Your script&#39;s identity. It is also what the
+              <a href="#linker">linker</a> builds your function names out of, so it has
+              to be unique across your project, and there are
+              <a href="#naming">names it must not start with</a>.</td></tr>
+      <tr><td><code>function autoexec main()</code></td>
+          <td>The entry point. <code>autoexec</code> means &ldquo;run this when the
+              script loads&rdquo;, which is the moment your mod is injected. Every mod
+              needs exactly one.</td></tr>
+      <tr><td><code>flag::wait_till(#"intro_scene_done")</code></td>
+          <td>The gate. Your script loads while the map is still coming up. Prints made
+              then are thrown away and half the game state does not exist yet. Wait for
+              this before doing anything visible.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <p class="panel-h">Two habits to build now</p>
+    <p><strong>Never do work in <code>autoexec</code> itself.</strong> Thread it and
+    return, exactly as the template does. An <code>autoexec</code> that blocks
+    holds up the script that included you.</p>
+    <p style="margin-bottom:0"><strong>Guard against being loaded twice.</strong>
+    <code>if ( isdefined( level.my_mod ) ) return; level.my_mod = 1;</code> at the top of
+    <code>main()</code> costs nothing and saves you the afternoon where everything
+    happens twice.</p>
+  </div>
+</section>
+
+<!-- ===================== TOUR ===================== -->
+<section id="tour">
+  <h2>The MOD TOOLS workspace</h2>
+  <div class="rule"></div>
+
+  <p>
+    MOD TOOLS holds four pages. You will spend almost all of your time on the second.
+  </p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Page</th><th>What it is for</th><th>Worth knowing</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>PROJECTS</strong></td>
+        <td>Every mod you are writing, as a card. Create, open, rename, publish,
+            delete, manage co-authors.</td>
+        <td>NEW PROJECT takes a name and a square thumbnail and opens the project in
+            one step. LOST PROJECT FILES? rebuilds a project from a mod you already
+            published, or several at once.</td>
+      </tr>
+      <tr>
+        <td><strong>EDIT MOD</strong></td>
+        <td>The editor. A project tree, tabs, split view, find-in-files, an output
+            console, and COMPILE / INJECT.</td>
+        <td>It edits a <em>project</em>, not a file. What COMPILE builds is the whole
+            folder, linked and compiled the same way a player&#39;s machine will build
+            it.</td>
+      </tr>
+      <tr>
+        <td><strong>SUBMIT MOD</strong></td>
+        <td>Sends a project for review. Thumbnail, title, description, tags,
+            changelog, the security report.</td>
+        <td>Submitting a project that is already published <em>is</em> the update
+            route. There is no separate button and no version number to bump.</td>
+      </tr>
+      <tr>
+        <td><strong>HASH FINDER</strong></td>
+        <td>Name to hash, hash to name, and a search over the known T9 names.</td>
+        <td>Every algorithm at once, with the one matching your guess outlined green.
+            COPY AS gives you the four spellings you actually type into a script. See
+            <a href="#hashes">Hashed names</a>.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>The keys you will use hourly</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Key</th><th>Does</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>B</kbd></td><td>Compile the project</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>F5</kbd></td><td>Compile and inject into the running game</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td>Quick-open any file in the project</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></td><td>Command palette: everything the editor can do, by name</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></td><td>Find in files, across this project or all of them</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Rebind any of the above</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="warn">
+    <p class="panel-h">Everything the editor compiles is a test build</p>
+    <p>A build made in EDIT MOD carries a test guard: it runs solo, or in a match
+    holding nobody but you and your registered co-authors, and nowhere else, and
+    anyone else who joins gets the session ended. That is deliberate and it is not
+    removable from the editor. See <a href="#guards">Where a mod is allowed to run</a>.
+    The build that goes to players is made by a different path and never carries it.</p>
+  </div>
+</section>
+
+<!-- ===================== PROJECT ===================== -->
+<section id="project">
+  <h2>Projects: a mod is a folder</h2>
+  <div class="rule"></div>
+
+  <p>
+    A project is a folder under <code>Projects/</code> next to the launcher, holding
+    your scripts and a <code>project.json</code>. It is plain and unencrypted: ordinary files you can back up, diff, and edit with anything you like.
+  </p>
+
+<pre><span class="c">Projects/</span>
+<span class="c">└─</span> zm_classic_mod/
+   <span class="c">├─</span> <b>zm_classic_mod.gsc</b>   <span class="c">the ENTRY script - named after the folder</span>
+   <span class="c">├─</span> perks.gsc
+   <span class="c">├─</span> rounds.gsc
+   <span class="c">├─</span> hud.csc              <span class="c">a client-side script (second VM)</span>
+   <span class="c">├─</span> thumbnail.png
+   <span class="c">└─</span> project.json         <span class="c">title, version, tags</span></pre>
+
+  <h3>The entry script</h3>
+  <p>
+    One file is the entry: the one named after the folder, or failing that whichever
+    declares <code>function autoexec</code>. It goes <strong>first</strong> when the
+    project is linked, so the namespaces it establishes are the ones everything else
+    resolves against, and it is the one file the tree will not let you delete.
+  </p>
+
+  <h3>Splitting a mod across files</h3>
+  <p>
+    NEW FILE in the project tree writes the file with its own <code>#namespace</code>
+    and adds a <code>#using</code> for it to the entry script. From then on it is
+    ordinary GSC: call into it as <code>othernamespace::function()</code>.
+  </p>
+
+<pre><span class="c">// zm_classic_mod.gsc  (entry)</span>
+<span class="k">#using</span> scripts\core_common\flag_shared.gsc;
+<span class="k">#using</span> zm_classic_mod\rounds.gsc;      <span class="c">&lt;- written for you by NEW FILE</span>
+
+<span class="k">#namespace</span> zm_classic_mod;
+
+<span class="k">function autoexec</span> main()
+{
+    level thread rounds::watch();          <span class="c">// a call into the other file</span>
+}</pre>
+
+  <div class="note">
+    <p class="panel-h">Those project-local <code>#using</code> lines vanish at build time</p>
+    <p>Your files are merged into one script before compiling, so an include pointing
+    at another file of your own would be an unresolvable path in the finished script.
+    The <a href="#linker">linker</a> strips exactly those and leaves every real
+    <code>scripts\...</code> include alone. You never have to think about it, but it is why a decompile of your published mod has fewer includes than you wrote.</p>
+  </div>
+
+  <h3>Renaming</h3>
+  <p>
+    Use EDIT on the project card. A rename is four things at once: the folder,
+    the entry script&#39;s file name, every project-local <code>#using</code> that
+    referred to it, and the title. Doing it by hand in Explorer gets three
+    of them.
+  </p>
+</section>
+
+<!-- ===================== LANGUAGE ===================== -->
+<section id="language">
+  <h2>The T9 GSC language</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    GSC is Treyarch&#39;s scripting language: C-shaped syntax, dynamically typed,
+    cooperatively threaded. Cold War runs the newest version of it, with a few
+    additions. If you have written GSC before you already know most of it, and
+    everything in this section marked <span class="tag red">NEW</span> is what changed.
+  </p>
+
+  <h3>Functions, <code>self</code> and <code>level</code></h3>
+
+  <p>
+    Every function is declared with <code>function</code>. Two modifiers matter:
+    <code>autoexec</code> (run this when the script loads) and <code>private</code>
+    (not callable from another script. Use it for everything that is not part of
+    your own file&#39;s surface).
+  </p>
+
+  <p>
+    A function called on an entity gets that entity as <code>self</code>. There is no
+    <code>this</code> and no dot-call: the object goes <em>before</em> the call.
+  </p>
+
+<pre><span class="k">function private</span> give_points( amount )
+{
+    <span class="c">// self is whoever this was called on</span>
+    self.score += amount;
+}
+
+<span class="c">// called on a player:</span>
+player give_points( 500 );
+
+<span class="c">// two special globals exist everywhere:</span>
+level.my_state = 1;        <span class="c">// level  - the match. Cleared on map load.</span>
+game[ "something" ] = 1;   <span class="c">// game   - survives a map load. Rarely what you want.</span></pre>
+
+  <h3>Threads</h3>
+  <p>
+    <code>thread</code> starts a function running alongside yours and returns
+    immediately. A thread lives until it returns, until something it declared
+    <code>endon</code> for happens, or until the entity it belongs to is deleted.
+  </p>
+
+<pre>level thread watch_rounds();          <span class="c">// runs on level</span>
+player thread watch_player();        <span class="c">// runs on the player</span>
+player childthread watch_gun();      <span class="c">// dies when the parent thread does</span>
+
+<span class="k">function private</span> watch_player()
+{
+    self endon( <span class="m">#"disconnect"</span> );   <span class="c">// stop when this player leaves</span>
+    self endon( <span class="m">#"death"</span> );
+
+    <span class="k">while</span> ( true )
+    {
+        <span class="c">// ... do a thing ...</span>
+        wait( 0.5 );                 <span class="c">// seconds</span>
+        waitframe( 1 );              <span class="c">// or exactly one frame</span>
+    }
+}</pre>
+
+  <div class="warn">
+    <p class="panel-h">A loop with no wait hangs the game</p>
+    <p>GSC threads are cooperative. Nothing preempts them. A <code>while</code>
+    or <code>for</code> that can go round without reaching a <code>wait</code> or
+    <code>waitframe</code> freezes Cold War outright. The linter flags the obvious
+    cases and the security scanner flags them again on submission, but the rule is
+    yours to hold: <strong>every loop yields</strong>.</p>
+  </div>
+
+  <h3>Notifies</h3>
+  <p>
+    The event system. Anything can <code>notify</code>, and anything can wait for it. This
+    is how you hook the base game: the shipped scripts notify constantly, and
+    most of what a mod does is listening.
+  </p>
+
+<pre>self waittill( <span class="m">#"death"</span> );
+
+<span class="c">// waittill returns a STRUCT of whatever was sent with the notify</span>
+result = self waittill( <span class="m">#"damage"</span> );
+amount = result.amount;
+
+<span class="c">// with a timeout - returns undefined if it never fired</span>
+r = self waittilltimeout( 3, <span class="m">#"risen"</span> );
+<span class="k">if</span> ( <span class="k">isdefined</span>( r ) ) { <span class="c">/* it fired */</span> }
+
+<span class="c">// sending one</span>
+level notify( <span class="m">#"my_mod_ready"</span> );</pre>
+
+  <h3>Flags</h3>
+  <p>
+    A flag is a named latch on <code>level</code>. Waiting on one that is already set
+    returns immediately, which makes flags the right tool for &ldquo;has this happened
+    yet&rdquo; where a notify is the tool for &ldquo;tell me when it happens&rdquo;.
+  </p>
+
+<pre><span class="k">#using</span> scripts\core_common\flag_shared.gsc;
+
+level flag::wait_till( <span class="m">#"intro_scene_done"</span> );   <span class="c">// the one you will use most</span>
+level flag::wait_till( <span class="m">#"start_zombie_round_logic"</span> );
+
+<span class="k">if</span> ( level flag::get( <span class="m">#"solo_game"</span> ) ) { ... }
+
+level flag::clear( <span class="m">"spawn_zombies"</span> );            <span class="c">// pauses zombie spawning</span>
+level flag::set( <span class="m">"spawn_zombies"</span> );</pre>
+
+  <h3>Hashed strings <span class="tag red">NEW</span></h3>
+  <p>
+    <code>#"like_this"</code> is a string the compiler turns into a number. The game
+    uses them for nearly every identifier: notify names, model names, weapon names,
+    asset names, table keys. They are cheap to compare and they are what the engine
+    expects. When a function&#39;s parameter is named something like
+    <code>str_name</code> in a decompile but every caller passes <code>#"..."</code>,
+    pass the hashed form.
+  </p>
+
+<pre>self setmodel( <span class="m">#"tag_origin"</span> );
+w = getweapon( <span class="m">#"ray_gun"</span> );
+level.zombie_health = 150;</pre>
+
+  <div class="warn">
+    <p class="panel-h">You cannot build a hashed string at runtime</p>
+    <p><code>#"weapon_" + "upgraded"</code> is not a thing. The <code>#"..."</code>
+    is resolved by the compiler, not by the VM. Keep every variant as its own literal.
+    And an ordinary string is <em>not</em> interchangeable with a hashed one: a function
+    that hashes its argument will not accept <code>"ray_gun"</code>, and one that wants a
+    plain string will not accept <code>#"ray_gun"</code>. When something silently does
+    nothing, this is one of the first two things to check.</p>
+  </div>
+
+  <h3>Arrays and structs</h3>
+
+<pre><span class="c">// arrays are dynamic and can be keyed by anything</span>
+a = [];
+a[ a.size ] = "first";
+b = <span class="m">[ 1, 2, 3 ]</span>;                     <span class="c">// inline init  </span><span class="tag red">NEW</span>
+
+<span class="k">foreach</span> ( v <span class="k">in</span> a ) { ... }
+<span class="k">foreach</span> ( k, v <span class="k">in</span> a ) { ... }
+
+<span class="c">// structs</span>
+s = spawnstruct();
+s.origin = ( 0, 0, 0 );
+s2 = <span class="m">{ #origin: ( 0, 0, 0 ), #angles: ( 0, 90, 0 ) }</span>;   <span class="tag red">NEW</span>
+
+<span class="c">// arrays of the game's own things</span>
+players = getplayers();
+<span class="k">foreach</span> ( player <span class="k">in</span> players ) { player thread my_thing(); }</pre>
+
+  <div class="note">
+    <p class="panel-h">Two array traps that have cost real sessions</p>
+    <p><strong><code>getarraykeys</code> keys do not index a different array.</strong>
+    Keys pulled from one array and used to index another resolve to nothing. Comparing
+    them (<code>==</code>, <code>isinarray</code>) is reliable, but indexing with them is
+    not. Keep parallel arrays and scan linearly, or iterate <strong>by value</strong>
+    (<code>foreach ( s in level.zombie_weapons )</code>).</p>
+    <p style="margin-bottom:0"><strong>An array the game built and keyed by hashed
+    string cannot be indexed with a hashed string your script is holding in a
+    variable.</strong> Same shape of failure: it resolves to nothing and your code takes
+    the <code>continue</code> branch on every pass. Where the game keeps a flat list of
+    the same fact, ask that instead with <code>isinarray</code>.</p>
+  </div>
+
+  <h3>Comparison, and <code>undefined</code></h3>
+  <p>
+    Any variable that was never assigned is <code>undefined</code>, and reading a field
+    that does not exist gives you <code>undefined</code> instead of an error. Guard
+    with <code>isdefined()</code>, and prefer the strict forms when either side might be
+    undefined:
+  </p>
+
+<pre><span class="k">if</span> ( <span class="k">isdefined</span>( self.my_field ) ) { ... }
+
+<span class="k">if</span> ( a === b ) { ... }        <span class="c">// strict - safe on mixed/undefined types</span>
+<span class="k">if</span> ( a !== b ) { ... }
+
+x = cond ? 5 : 10;             <span class="c">// ternary  </span><span class="tag red">NEW</span></pre>
+
+  <h3>What you will call constantly</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Call</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>IPrintLnBold( "..." )</code></td><td>Big centre-screen text. Your debug print. One line, replaces the last.</td></tr>
+      <tr><td><code>IPrintLn( "..." )</code></td><td>Smaller, scrolls. Better for a build log, since bold overwrites itself.</td></tr>
+      <tr><td><code>getplayers()</code></td><td>Every player. Server side only.</td></tr>
+      <tr><td><code>getlocalplayers()</code></td><td>The client-side equivalent. <code>[0]</code> is this machine&#39;s player.</td></tr>
+      <tr><td><code>isdefined( x )</code></td><td>The most-typed function in GSC.</td></tr>
+      <tr><td><code>wait( n )</code> / <code>waitframe( 1 )</code></td><td>Yield for seconds / for one frame.</td></tr>
+      <tr><td><code>spawnstruct()</code></td><td>A bare struct. Perfectly valid as <code>self</code> for a lot of engine helpers.</td></tr>
+      <tr><td><code>getweapon( #"name" )</code></td><td>A weapon object. Compare against <code>level.weaponnone</code> to check it resolved.</td></tr>
+      <tr><td><code>self endon( #"disconnect" )</code></td><td>On every per-player thread you ever write.</td></tr>
+      <tr><td><code>util::get_map_name()</code></td><td>The current map as a lowercase <em>string</em>.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="warn">
+    <p class="panel-h">Dev blocks do not exist in the retail game</p>
+    <p><code>/# ... #/</code> and <code>assert()</code> are compiled out of the shipped
+    build. A debug print inside one is a print that never happens. Use plain
+    <code>IPrintLnBold</code>. If your script seems silent, it did not run. Output
+    is not being swallowed.</p>
+  </div>
+</section>
+
+<!-- ===================== NAMING ===================== -->
+<section id="naming">
+  <h2>Namespaces, names and traps</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Two naming rules in T9 will let you compile a mod that does nothing, or refuse to
+    compile a project while pointing at the wrong file. Both are cheap to avoid and
+    expensive to diagnose, so they are near the front of this handbook instead of buried in troubleshooting.
+  </p>
+
+  <h3>Never start a name with a hash prefix</h3>
+  <p>
+    The compiler treats seven prefixes as hash literals. It expects hexadecimal
+    after them, because that is how a decompile writes a name it could not resolve:
+  </p>
+
+  <p style="max-width:none">
+    <code>event_</code> &nbsp; <code>var_</code> &nbsp; <code>function_</code> &nbsp;
+    <code>namespace_</code> &nbsp; <code>hash_</code> &nbsp; <code>script_</code> &nbsp;
+    <code>file_</code>
+  </p>
+
+  <p>
+    A function called <code>event_halloween_main</code> is not hexadecimal, so the whole
+    thing compiles to hash zero. One of them compiles &ldquo;fine&rdquo; and is exported
+    under the wrong name. Nothing can ever call it. <strong>Two of them in one
+    script is a hard error</strong>: <em>The export &lt;name&gt; was defined
+    twice</em>, reported against the second one, because they both became zero.
+  </p>
+
+  <div class="warn">
+    <p class="panel-h">This bites hardest through your <code>#namespace</code></p>
+    <p>The linker builds every exported name as
+    <code>&lt;namespace&gt;_&lt;function&gt;</code>. So a single file declaring
+    <code>#namespace event_halloween;</code> poisons <em>every function in it</em> and
+    the project stops compiling, with an error naming a function, which points
+    you at the wrong thing entirely. <strong>The namespace is the cause.</strong> Prefix
+    yours with something of your own instead: <code>t9_halloween</code>,
+    <code>mymod_events</code>.</p>
+  </div>
+
+  <h3>Never name a local function the same as one you call through <code>ns::</code></h3>
+  <p>
+    If a file both declares <code>function on_ai_killed()</code> and calls
+    <code>callback::on_ai_killed( &amp;on_ai_killed )</code>, the linker&#39;s rename
+    pass rewrites the qualified call too, so the registration goes to a function
+    in the callback namespace that does not exist. It <strong>compiles clean and does
+    nothing at runtime</strong>: your mod loads, and silently has no behaviour.
+  </p>
+  <p>
+    The check is mechanical. For every function <code>F</code> your file declares, search
+    the file for <code>::F(</code>. If both appear, rename yours.
+  </p>
+
+  <h3>Namespaces must be unique in a project</h3>
+  <p>
+    GSC already forbids two scripts sharing a namespace, and the linker relies on that:
+    it is the identity it prefixes your functions with. File names cannot serve, because
+    every single-file mod ever published is called <code>source_code.gsc</code>. A
+    script with no <code>#namespace</code> gets a stable invented one, which works but
+    makes your own decompiles unreadable. Declare one.
+  </p>
+
+  <h3>Small ones, collected</h3>
+  <ul>
+    <li><strong>No <code>#define</code>.</strong> It compiles, but your files are merged
+        into one script before compiling and what that does to a define is untested. Use
+        a function that returns the constant. The compiler folds it just as well
+        and it survives linking.</li>
+    <li><strong>A call to a function that does not exist compiles without complaint.</strong>
+        <code>somens::misspelled()</code> is a link error at map load, not a compile
+        error, and a link error is fatal. It is the one loud failure this VM has.
+        The editor&#39;s linter catches the common shape of it (a namespace with no
+        matching <code>#using</code>), but not a typo inside a namespace you did include.</li>
+    <li><strong>Do not write the settings marker token in a source file, not even in a
+        comment.</strong> The <a href="#settings">settings parser</a> looks for markers
+        deliberately and a marker inside a comment is still found in some positions.
+        Describe it in prose if you must document it.</li>
+    <li><strong><code>array::remove_undefined</code> does not exist</strong> in T9&#39;s
+        <code>array_shared.gsc</code>, whatever habits from older games say. Nor do plenty of other
+        remembered helpers. Check it exists before relying on it, because a
+        missing one is silent until map load.</li>
+  </ul>
+</section>
+
+<!-- ===================== EDITOR ===================== -->
+<section id="editor">
+  <h2>The editor</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    A Sublime/VS&nbsp;Code-shaped editor that knows T9 specifically: it completes
+    against a real database of the game&#39;s own functions, and it lints for the traps
+    that have actually cost people a session.
+  </p>
+
+  <h3>Editing</h3>
+  <ul>
+    <li><strong>Multi-caret and column selection.</strong> <kbd>Shift</kbd>+<kbd>Alt</kbd>+drag,
+        or middle-button drag with no modifier at all (Sublime&#39;s binding). Both keep
+        scrolling if you drag past the edge. A multi-caret edit is one undo step.</li>
+    <li><strong>Folding and bookmarks</strong> live on the line, not on a line number,
+        so they survive edits above them. The fold handle sits on
+        <code>function foo()</code>, not on the <code>{</code>.</li>
+    <li><strong>Snippets with mirrored tab stops</strong>, structural selection, line
+        surgery, and a command palette on <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>.</li>
+    <li><strong>SEARCH is a page of its own</strong>: this project, every project, or
+        just what is open. Results are grouped by file, and REPLACE ALL works across them. It reads
+        your <em>unsaved buffers</em> in preference to disk, so results match the screen.</li>
+    <li><strong>Every binding is editable</strong> in VIEW &rsaquo; Edit Keybinds
+        (<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd>), and the change
+        reaches the menus, the palette and the exported shortcut sheet at once.</li>
+  </ul>
+
+  <h3>What it knows about the game</h3>
+  <p>
+    Completion and parameter hints come from a database built from a decompile of Cold
+    War&#39;s own scripts: roughly 600 engine builtins, 97 namespace-to-include mappings
+    and <strong>4,033 game functions with their real parameter names</strong>. There are
+    two databases (one for the server VM and one for the client), and which
+    one answers is decided by the extension of the file you are typing in.
+  </p>
+  <p>
+    That is also where the missing-<code>#using</code> quick fix comes from: type
+    <code>clientfield::</code> in a file that has not included
+    <code>clientfield_shared.gsc</code> and the linter offers to add it.
+  </p>
+  <p>
+    It is a derived subset, not the compiler&#39;s own table. A few real builtins
+    are missing from it (<code>getabsmins</code>, <code>useweaponmodel</code> and even
+    <code>spawn</code> among them). <strong>&ldquo;Not in the database&rdquo; is not
+    evidence that a function does not exist</strong>. It just means nothing in the dump
+    it was built from called it.
+  </p>
+
+  <h3>The linter</h3>
+  <p>These are not generic C-style warnings. Each one is a specific way T9 bites:</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Rule</th><th>Why it exists</th></tr></thead>
+    <tbody>
+      <tr><td><code>GetAIArray()</code> / <code>on_ai_spawned</code></td>
+          <td>Enumerating AI or registering for AI spawn events from an injected script
+              <strong>hard-crashes the game</strong>. See <a href="#zombies">Zombies and
+              rounds</a> for what to use instead.</td></tr>
+      <tr><td><code>#using</code> without <code>.gsc</code></td>
+          <td>Older games omitted the extension, but Cold War requires it. Silently resolves to nothing.</td></tr>
+      <tr><td>A namespace with no matching <code>#using</code></td>
+          <td>Calls into it link to nothing, and a link failure is fatal at map
+              load, not at compile.</td></tr>
+      <tr><td><code>fn( -var )</code></td>
+          <td>A unary minus in a call argument is a compiler parse error. Use a temp.</td></tr>
+      <tr><td><code>GetArrayKeys</code> used across arrays</td>
+          <td>Keys from one array do not index a different one.</td></tr>
+      <tr><td><code>/# ... #/</code> dev blocks</td>
+          <td>Compiled out of retail. Your debug print does not exist in the shipped game.</td></tr>
+      <tr><td>Prints before <code>intro_scene_done</code></td>
+          <td>They are dropped. Gate them.</td></tr>
+      <tr><td>Loops with no <code>wait</code></td>
+          <td>They freeze the game outright.</td></tr>
+      <tr><td>Unused scripts, unresolved setting ids, duplicate functions</td>
+          <td>Project-wide checks. They read the other files in the folder, so a
+              setting declared in one file and used in another is not called a typo.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    Missing semicolons are deliberately <em>not</em> linted: doing it properly needs a
+    real parser, and the compiler reports them anyway with a line you can click.
+  </p>
+</section>
+
+<!-- ===================== SETTINGS ===================== -->
+<section id="settings">
+  <h2>Player settings: the <code>[[[ ]]]</code> markers</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    This is the launcher&#39;s own system, and it is the single biggest thing you can do
+    to make a mod worth downloading. A mod declares its options by writing markers into
+    its own GSC. There is nothing to register and no API to call: the controls a player
+    sees under your mod&#39;s description are generated from your source, and the values
+    they pick are substituted back into it before it is compiled for them.
+  </p>
+
+  <div class="flow">
+    <div class="step"><span class="n">YOU WRITE</span><b>A marker</b><span class="d">A declaration in your GSC saying what kind of control it is.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">PLAYER SEES</span><b>A control</b><span class="d">Under your mod in the library, with your label and your help text.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">THEY CHOOSE</span><b>A value</b><span class="d">Stored on their machine, keyed by your mod id. Survives your updates.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">LOAD MODS</span><b>A literal</b><span class="d">Their value is written into your source as ordinary GSC, then compiled.</span></div>
+  </div>
+
+  <h3>Form 1: inline, the declaration <em>is</em> the substitution point</h3>
+
+  <p>
+    Write the marker where the value goes. Good for a handful of options, because the
+    declaration sits next to the thing it controls.
+  </p>
+
+<pre>level.infinite_ammo = <span class="m">[[[CHECKBOX id="infinite_ammo"
+        label="Infinite Ammo" default=true]]]</span>;
+
+level.zombie_speed = <span class="m">[[[SLIDER id="speed" label="Zombie Speed"
+        min=1 max=10 default=5 help="Higher is faster."]]]</span>;</pre>
+
+  <p>
+    <code>id=</code> is required on this form. Everything else is optional.
+  </p>
+
+  <h3>Form 2: a header block, referenced by id</h3>
+
+  <p>
+    Declare everything in one place, then drop <code>[[[id]]]</code> wherever you need
+    the value, as many times as you like, in any file of the project. This is the
+    form to use once you have more than a few settings, and the one that makes a big
+    mod&#39;s configuration readable.
+  </p>
+
+<pre><span class="c">/*<span class="m">[[[SETTINGS]]]</span>
+CHECKBOX headshots   "Headshots Only"   default=false
+SLIDER   speed       "Zombie Speed"     min=1 max=10 default=5
+TEXT     welcome     "Welcome Message"  default="Have fun"
+CHOICE   difficulty  "Difficulty"       options="Easy,Normal,Hard" default="Normal"
+<span class="m">[[[/SETTINGS]]]</span>*/</span>
+
+
+<span class="k">if</span> ( <span class="m">[[[headshots]]]</span> )
+{
+    level thread headshots_only();
+}
+
+level.zombie_speed = <span class="m">[[[speed]]]</span>;
+
+player IPrintLnBold( <span class="m">[[[welcome]]]</span> );</pre>
+
+  <p>
+    The block line is <code>TYPE&nbsp;id&nbsp;"Label"&nbsp;attributes...</code>. The label is optional and falls back to the id. The whole block is written inside a
+    <code>/* */</code> comment so the file still compiles in any editor, and the parser
+    removes the comment wrapper along with it.
+  </p>
+
+  <p>The two forms mix freely in one mod, and in one file.</p>
+
+  <h3>The four control types</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Type</th><th>Substitutes as</th><th>Aliases you may also write</th></tr></thead>
+    <tbody>
+      <tr><td><code>CHECKBOX</code></td><td><code>true</code> / <code>false</code></td><td><code>CHECKLIST</code>, <code>TOGGLE</code>, <code>BOOL</code></td></tr>
+      <tr><td><code>SLIDER</code></td><td>a number</td><td><code>NUMBER</code>, <code>RANGE</code></td></tr>
+      <tr><td><code>TEXT</code></td><td>a quoted GSC string</td><td><code>STRING</code></td></tr>
+      <tr><td><code>CHOICE</code></td><td>a quoted GSC string, one of a fixed list</td><td><code>DROPDOWN</code>, <code>SELECT</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Attributes</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Attribute</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>id=</code></td><td>Required on the inline form, positional on the block form. How you reference it, and the key the player&#39;s value is stored under. <strong>Do not rename it casually</strong>. It is the identity, and changing it resets everybody&#39;s choice.</td></tr>
+      <tr><td><code>label=</code></td><td>What the player sees. Defaults to the id.</td></tr>
+      <tr><td><code>help=</code></td><td>A grey hint line under the control. Also spelled <code>description=</code>.</td></tr>
+      <tr><td><code>default=</code></td><td>The starting value, and the value <strong>your own test builds compile with</strong>.</td></tr>
+      <tr><td><code>min=</code> <code>max=</code> <code>step=</code></td><td>Sliders. <strong>A decimal point anywhere makes it a float</strong>: <code>min=0 max=1 step=0.1</code> gives fractional values, <code>min=1 max=10</code> gives whole ones.</td></tr>
+      <tr><td><code>options="a,b,c"</code></td><td>Choices. Required on <code>CHOICE</code>.</td></tr>
+      <tr><td><code>category=</code></td><td><strong>Puts this setting on its own tab.</strong> Also spelled <code>group=</code> or <code>tab=</code>.</td></tr>
+      <tr><td><code>subcategory=</code></td><td>A heading within a tab. Also spelled <code>section=</code> or <code>subgroup=</code>.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Tabs and headings, for a mod with a lot of options</h3>
+  <p>
+    Give settings a <code>category</code> and the panel grows tabs, in the order you
+    first declared each one. <code>subcategory</code> becomes a heading inside a tab.
+    Anything you leave uncategorised in a mod that uses categories is collected onto a leading <strong>General</strong> tab instead of being hidden or filed under somebody else&#39;s heading.
+  </p>
+
+<pre><span class="c">/*<span class="m">[[[SETTINGS]]]</span>
+CHECKBOX god         "God Mode"        default=false category="Player"
+SLIDER   speed       "Move Speed"      min=1 max=3 default=1 category="Player"
+
+SLIDER   hp          "Zombie Health"   min=50 max=5000 default=150
+         category="Zombies" subcategory="Difficulty"
+SLIDER   count       "Max At Once"     min=6 max=48 default=24
+         category="Zombies" subcategory="Difficulty"
+CHECKBOX sprint      "Sprinters"       default=true
+         category="Zombies" subcategory="Behaviour"
+<span class="m">[[[/SETTINGS]]]</span>*/</span></pre>
+
+  <h3>What the compiler actually sees</h3>
+  <p>For a player who left the defaults alone but dragged the speed slider to 7:</p>
+
+<pre>level.infinite_ammo = <b>true</b>;
+level.zombie_speed = <b>7</b>;
+
+<span class="k">if</span> ( <b>false</b> )
+{
+    level thread headshots_only();
+}
+
+player IPrintLnBold( <b><span class="s">"Have fun"</span></b> );</pre>
+
+  <p>
+    Every marker becomes a GSC literal and the declaration block is removed entirely.
+    What reaches the compiler is ordinary GSC with no trace of the system, which
+    is why a setting can appear anywhere an expression can, including inside a
+    condition, an array literal, or a function argument.
+  </p>
+
+  <h3>The rules to know before you rely on it</h3>
+  <ul>
+    <li><strong>Declarations are read across the whole mod, not per file.</strong>
+        Declare a setting in one script and use it in another. That is checked
+        before your mod is published, and the editor&#39;s linter knows about your
+        sibling files, so a cross-file reference is not called a typo. Two files
+        declaring the same id is an error.</li>
+    <li><strong>An unresolved marker is a hard error.</strong> The mod is not compiled,
+        not packaged and not published. There is no partial substitution. A stray
+        marker would fail on every machine that installed the mod, so it fails on
+        yours first.</li>
+    <li><strong>Values are treated as untrusted input.</strong> A slider outside its
+        range is clamped, a choice not in the list falls back to the default, and text
+        is escaped before it becomes a GSC string literal. A hand-edited config file
+        cannot inject code into your mod: a value of
+        <code>evil" ); KillServer(); IPrintLnBold( "</code> arrives as one harmless
+        escaped string.</li>
+    <li><strong>Values are stored per mod id</strong>, so a player&#39;s choices survive
+        your updates. This is another reason not to change ids.</li>
+    <li><strong>Do not write a marker token in a comment</strong> to &ldquo;document&rdquo;
+        it. Describe it in words instead.</li>
+  </ul>
+
+  <div class="warn">
+    <p class="panel-h">COMPILE uses YOUR defaults, not a player&#39;s choices</p>
+    <p>Your test builds substitute every marker at the <code>default=</code> you declared,
+    and print what they used to OUTPUT. That is also what the review bot compiles. To
+    test a different value, change the default and recompile, or set a test value
+    in EDIT MOD&#39;s <strong>MOD SETTINGS</strong> tab, which shows the exact panel your
+    players will see and lets you build against what is on screen.</p>
+  </div>
+</section>
+
+<!-- ===================== PRESETS ===================== -->
+<section id="presets">
+  <h2>Presets</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    A second block names whole configurations, so a player can pick
+    &ldquo;Classic&rdquo; instead of setting eleven sliders. A preset is a
+    <strong>complete</strong> configuration: anything it does not mention takes that
+    setting&#39;s declared <code>default=</code>, because a half-applied preset would
+    give two different games depending on what the player had already touched.
+  </p>
+
+<pre><span class="c">/*<span class="m">[[[PRESETS]]]</span>
+<span class="c">// The way the mod is meant to be played.</span>
+PRESET "Classic" default help="How the mod is meant to play"
+    headshots = false
+    speed     = 5
+    difficulty = "Normal"
+
+PRESET "Brutal" help="For people who have already beaten it"
+    headshots = true
+    speed     = 10
+    difficulty = "Hard"
+<span class="m">[[[/PRESETS]]]</span>*/</span></pre>
+
+  <ul>
+    <li><strong>One preset may be marked <code>default</code></strong>, and that is what
+        a fresh install gets, so the shipped configuration is <em>yours</em> instead of whatever each individual <code>default=</code> happened to be.
+        Only one is allowed, and a second is an error.</li>
+    <li><strong>There is no preset bar until a mod asks for one.</strong> Declaring a
+        block asks. So does the line <code>PRESETS on</code>, for a mod that wants
+        players to save their own without shipping any.
+        <code>PRESETS off</code> overrides both. <strong>Off is the default.</strong></li>
+    <li><strong>Players can save their own.</strong> Those live only on their machine,
+        are never in your package, and are deliberately kept apart from the values so
+        that RESET TO DEFAULTS cannot take them with it.</li>
+    <li><strong>Your <code>//</code> comments inside the block survive</strong> the
+        editor rewriting it.</li>
+  </ul>
+
+  <div class="ok">
+    <p class="panel-h">Make your presets from the panel, not by hand</p>
+    <p>EDIT MOD&#39;s <strong>MOD SETTINGS</strong> tab edits your presets rather than
+    just previewing them. Set every control to what you want, press <strong>SAVE
+    AS</strong>, name it, and your project&#39;s own
+    <code>/*[[[PRESETS]]]*/</code> block is rewritten as a single undo step, in
+    declaration order, comments intact. It picks the file that already holds a block. If
+    two files hold one, it refuses and says so rather than guessing.</p>
+  </div>
+</section>
+
+<!-- ===================== PIPELINE ===================== -->
+<section id="pipeline">
+  <h2>The build pipeline</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Both paths (COMPILE in the editor, and LOAD MODS on a player&#39;s machine) run the same stages in the same order. The differences are which guard goes
+    on and whose setting values go in.
+  </p>
+
+  <div class="flow">
+    <div class="step"><span class="n">STAGE 1</span><b>Substitute</b><span class="d">Markers replaced with literals and the SETTINGS block removed. Fails closed.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STAGE 2</span><b>Link</b><span class="d">Every script in the mod becomes one, functions renamed to carry where they came from.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STAGE 3</span><b>Guard</b><span class="d">A check spliced into the top of every function, so a mod cannot run where it should not.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STAGE 4</span><b>Compile</b><span class="d">In the launcher, to a compiled script.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">STAGE 5</span><b>Load</b><span class="d">Handed to the running game.</span></div>
+  </div>
+
+  <p>
+    When a player loads several mods at once there is one extra stage between 2 and 3:
+    the already-linked mods are linked <em>again</em>, together, so the whole selection
+    becomes a single script. That is what makes multi-mod loading work, and it is
+    why two mods that both define <code>#namespace utils</code> is a problem the player
+    finds, not you.
+  </p>
+
+  <p>
+    <strong>Every stage runs once per side.</strong> A mod with a client half is two
+    scripts in two virtual machines, so it is linked twice, guarded twice and compiled
+    twice. Settings are the exception: they are parsed across the whole mod, because one
+    mod has one set of settings and a <code>.csc</code> may reference an id declared in a
+    <code>.gsc</code>.
+  </p>
+</section>
+
+<!-- ===================== LINKER ===================== -->
+<section id="linker">
+  <h2>The linker</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    A mod is a folder, but the game takes one script. The linker reconciles those two facts,
+    and it is the stage most likely to surprise you, because it renames your functions.
+  </p>
+
+  <h3>Naming</h3>
+  <p>
+    Every declared function becomes
+    <code>ModName_ScriptNamespace_FuncName</code>, so <code>give_all</code> in
+    the <code>zm_perks</code> namespace of a mod called Director&#39;s Cut becomes
+    <code>DirectorsCut_ZmPerks_give_all</code>. Call sites are rewritten to match,
+    including <code>ns::func()</code> cross-file calls and <code>&amp;func</code>
+    function references.
+  </p>
+
+  <p>
+    Two consequences for you: your <code>#namespace</code> must not start with a
+    <a href="#naming">hash prefix</a>, and you must not name a local function the same as
+    one you call through another namespace. Both are in
+    <a href="#naming">Namespaces, names and traps</a>, and both are silent.
+  </p>
+
+  <h3>Your <code>#using</code> lines</h3>
+  <p>
+    Project-local includes (<code>#using myproject\rounds.gsc;</code>) are
+    stripped, by exact relative-path match only. Never by file name: that would strip a
+    real <code>#using scripts\zm_common\load.gsc</code> from any project that happens to
+    own a <code>load.gsc</code>. Every genuine <code>scripts\...</code> include is left
+    exactly as you wrote it and folded with the duplicates.
+  </p>
+
+  <h3>Order matters</h3>
+  <p>
+    The entry script goes first, then everything else in path order. So the file that
+    declares your <code>autoexec</code> and lists its dependencies is the one that
+    establishes the namespaces the rest resolve against. Alphabetical order would
+    put <code>audio.gsc</code> ahead of the file that says the project uses it.
+  </p>
+
+  <h3>What comes out</h3>
+  <p>
+    One script, with duplicate <code>#using</code> lines folded together, every
+    <code>#namespace</code> dropped and a single <code>#namespace t9mm_linked;</code>
+    emitted in their place. If you ever decompile your own published mod, that is why it
+    does not look like what you wrote.
+  </p>
+</section>
+
+<!-- ===================== COMPILER ===================== -->
+<section id="compiler">
+  <h2>Compiling</h2>
+  <div class="rule"></div>
+
+  <p>
+    The launcher compiles GSC itself. There is no external tool to install, no command
+    line step and nothing to configure: <kbd>Ctrl</kbd>+<kbd>B</kbd> builds the
+    whole project and <kbd>Ctrl</kbd>+<kbd>F5</kbd> builds it and loads it into the
+    running game.
+  </p>
+
+  <p>
+    Which virtual machine a file is compiled for comes from its extension and from
+    nothing else. A <code>.csc</code> builds for the client VM, and everything else builds
+    for the server VM, which is what every mod written before client support existed
+    is. There is no setting for it.
+  </p>
+
+  <div class="note">
+    <p class="panel-h">You never have to think about the compiled file</p>
+    <p>Compiled output is scratch. It is written, used and deleted. A published
+    mod carries your <strong>source</strong>, which is also what a reviewer reads, and it
+    is compiled fresh on each player&#39;s machine with their own setting values. There
+    is nothing to ship, nothing to check in, and no compiled artefact to keep in step
+    with your source.</p>
+  </div>
+</section>
+
+<!-- ===================== ERRORS ===================== -->
+<section id="errors">
+  <h2>Reading compile errors</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    A compile error names a file and a line you recognise, and clicking it opens that
+    file there. Knowing why that is not trivial explains the one case where it cannot.
+  </p>
+
+  <p>
+    A line number from the compiler counts lines in what the compiler was <em>handed</em>:
+    your whole project, linked into one script, with a guard spliced into every function
+    and settings substituted throughout. Three stages moved your lines, so each hands
+    back a record of where every line came from, and those are composed to answer
+    &ldquo;which file, which line, as the author typed it&rdquo;.
+  </p>
+
+  <div class="warn">
+    <p class="panel-h">&ldquo;(combined script, line N)&rdquo;</p>
+    <p>When an error lands on a line that belongs to no file you wrote (the
+    linker&#39;s own banner, a guard helper), it is reported exactly like that instead of being given a plausible-looking location. A wrong jump is worse than no
+    jump. In practice it means the error is not in your code and something upstream has
+    gone wrong. The OUTPUT tab shows the raw compiler text beside it.</p>
+  </div>
+
+  <p>
+    Compiler findings land in <strong>PROBLEMS</strong>, kept separate from the
+    linter&#39;s list, since relinting happens on every keystroke and would otherwise
+    wipe out the list you are working through. One click on a row jumps to it.
+  </p>
+
+  <h4>The errors you will actually see</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Message</th><th>Cause</th></tr></thead>
+    <tbody>
+      <tr><td><em>The export &lt;name&gt; was defined twice</em></td>
+          <td>Usually not a duplicate at all: two names starting with a
+              <a href="#naming">hash prefix</a>, both collapsing to zero. Check your
+              <code>#namespace</code> first.</td></tr>
+      <tr><td>A parse error on a line that looks fine</td>
+          <td>Look for a unary minus in a call argument (<code>fn( -x )</code>) on that
+              line or the one before.</td></tr>
+      <tr><td>An error in a file you did not touch</td>
+          <td>The linker merges everything, so a broken file anywhere in the project
+              fails the whole build.</td></tr>
+      <tr><td>An unresolved setting id</td>
+          <td>A <code>[[[id]]]</code> with no matching declaration anywhere in the mod.
+              Substitution fails closed, so nothing compiles until it resolves.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ===================== CSC ===================== -->
+<section id="csc">
+  <h2>Client scripts (<code>.csc</code>)</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Cold War runs two script virtual machines. <code>.gsc</code> is the server side (game logic, spawning, damage, points) and runs only on the host.
+    <code>.csc</code> is the client side, running on each player&#39;s own machine:
+    HUD, visual effects, sound, anything local. The launcher builds and loads both.
+  </p>
+
+  <p>
+    Put a <code>.csc</code> in your project and it is picked up automatically. Nothing
+    else needs saying: no setting, no manifest, no pairing.
+  </p>
+
+  <h3>What is different on the client side</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Server (<code>.gsc</code>)</th><th>Client (<code>.csc</code>)</th></tr></thead>
+    <tbody>
+      <tr><td><code>getplayers()</code></td><td><code>getlocalplayers()</code>, where <code>[0]</code> is this machine&#39;s player</td></tr>
+      <tr><td>Most calls take no client number</td><td>Most calls take <code>localclientnum</code> as their first argument</td></tr>
+      <tr><td><code>flag::wait_till( #"intro_scene_done" )</code></td><td><strong>Does not exist</strong>. It is a server flag, so waiting on it hangs forever</td></tr>
+      <tr><td><code>KillServer()</code>, <code>IPrintLnBold</code> to everyone</td><td>Neither. Local output only</td></tr>
+      <tr><td>Runs on the host only</td><td>Runs on whoever loaded it, and remote players see nothing unless they load it too</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>Confirmed working from an injected client script</h4>
+  <ul>
+    <li><code>function autoexec main()</code>, runs at load time. The whole premise.</li>
+    <li><code>getlocalplayers()</code>, and <code>.origin</code> off it.</li>
+    <li><code>util::spawn_model( localclientnum, #"model", origin )</code>, a
+        client-only visual, and the best heartbeat you can give yourself while probing.</li>
+    <li><code>playsound( localclientnum, alias, origin )</code>.</li>
+    <li><code>getcurrentweapon( localclientnum )</code>, but the weapon table may
+        not be populated the instant you load, so poll with a bounded wait.</li>
+    <li>Ordinary <code>#using</code> + namespace calls into the game&#39;s own live
+        client scripts.</li>
+    <li>Its own <code>level</code>, separate from the server&#39;s, useful for a
+        re-injection guard.</li>
+  </ul>
+
+  <div class="warn">
+    <p class="panel-h">The two VMs cannot call each other</p>
+    <p>An injected <code>.gsc</code> cannot call into client scripts and an injected
+    <code>.csc</code> cannot call into server scripts. The only channel between them is
+    the clientfield system, and you can only <em>set</em> fields the game already
+    registered, never add one. So anything your client half needs to know, it usually has
+    to work out <strong>locally</strong>: watch the local player&#39;s own weapon rather
+    than having the server tell you about it. See
+    <a href="#cant">What you cannot do</a>.</p>
+  </div>
+
+  <p>
+    Everything from the server side about timing carries over: prints and one-shot state
+    writes made during the load window are lost, dev blocks do not exist, and loading is
+    per map load. Guard against being loaded twice with
+    <code>if ( isdefined( level.my_mod ) ) return;</code> on this side too. It is
+    a different <code>level</code>, so it needs its own guard.
+  </p>
+</section>
+
+<!-- ===================== LOAD ===================== -->
+<section id="load">
+  <h2>Loading a mod into the game</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Your compiled script is handed to Cold War while it is running, and the game loads
+    it along with its own scripts for that map. Everything about testing a mod follows
+    from <em>when</em> that is allowed to happen.
+  </p>
+
+  <div class="warn">
+    <p class="panel-h">The window is the pre-game menu</p>
+    <p><strong>Too early</strong> (before a map and mode are chosen) and
+    there is nothing to load into: you get <em>&ldquo;SPT pool is empty&rdquo;</em>.
+    <strong>Mid-match is worse</strong>: it is reported as succeeding and nothing runs,
+    because the match&#39;s scripts were linked long ago and never look again. Get to the
+    lobby where the map is chosen and the match has not started, and load there.</p>
+  </div>
+
+  <h3>The rules</h3>
+  <ul>
+    <li><strong>Once per map load.</strong> Every map change (including a restart) wipes your mod. Go back to the menu and load again. This is not a bug
+        and there is no way around it.</li>
+    <li><strong>You have to be the host.</strong> A published mod runs in any match
+        you host. A build made in the editor runs solo, or in a match holding nobody
+        but you and your registered co-authors. Nothing here reads the lobby type
+        (no script can tell a private lobby from a matchmade one), so the
+        only question either guard asks is who is in the game. See
+        <a href="#guards">below</a>.</li>
+    <li><strong>The host loads the server half.</strong> In co-op only the host runs
+        <code>.gsc</code>, so only the host needs a server-side mod. A
+        <code>.csc</code> half only affects the machine that loaded it. Every
+        player who wants the client effects has to load it themselves.</li>
+    <li><strong>Selection order is load order, and load order is priority.</strong> When
+        two mods touch the same thing, the later one wins. Players can drag the list to
+        change it, and the launcher warns about likely collisions but never blocks a
+        load.</li>
+    <li><strong>Unloading only works in the same window loading does</strong>, at
+        the menu, before the match&#39;s scripts have run. Mid-match there is nothing to
+        undo, and after a map load the slot is clean anyway.</li>
+  </ul>
+
+  <h3>The loop you will settle into</h3>
+  <ol>
+    <li>Edit. <kbd>Ctrl</kbd>+<kbd>B</kbd> until it compiles.</li>
+    <li>In game: quit to the pre-game menu (not the desktop).</li>
+    <li><kbd>Ctrl</kbd>+<kbd>F5</kbd>.</li>
+    <li>Start the match. Watch for your gated print.</li>
+    <li>Quit to the menu. Repeat from 1. You do not need to restart Cold War
+        between builds, only between matches.</li>
+  </ol>
+</section>
+
+<!-- ===================== GUARDS ===================== -->
+<section id="guards">
+  <h2>Where a mod is allowed to run</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    One guard, on unreleased builds only: a check inserted at the top of every function
+    in your mod. A guarded function does nothing and returns, so a whole mod goes quiet
+    without anything having to unwind it.
+  </p>
+
+  <div class="pair">
+    <div class="panel">
+      <p class="panel-h">Your test builds, made in EDIT MOD</p>
+      <p><span class="tag green">SOLO</span> runs.<br>
+         <span class="tag green">CO-AUTHORS ONLY</span> runs.<br>
+         <span class="tag red">ANYONE ELSE</span> never.</p>
+      <p style="color:var(--muted);font-size:13px;margin-top:10px;">
+        Anyone who joins who is not a registered co-author <strong>ends the
+        session</strong>. An untested build is not something to be playing on
+        strangers.</p>
+    </div>
+    <div class="panel">
+      <p class="panel-h">Your published mod, downloaded and loaded</p>
+      <p><span class="tag green">ANY MATCH YOU HOST</span> runs.</p>
+      <p style="color:var(--muted);font-size:13px;margin-top:10px;">
+        A published mod was reviewed and signed to get onto the MODS page at all:
+        that is its gate, not the lobby type. In public matchmaking it rarely
+        amounts to much: the mod only runs when you end up as the host, loaded from
+        the pre-game lobby, so a match you join in progress stays unmodified.</p>
+    </div>
+  </div>
+
+  <h3>Why the test-build guard checks people, not lobby types</h3>
+  <p>
+    Not &ldquo;is this an online session&rdquo;. In Cold War every lobby launched from
+    the menu is an online session, solo included, and the script can measurably
+    not tell a Private co-op lobby from a matchmade one either. Every signal it can
+    read returns the same values in both. So the guard asks the one question that can
+    be answered: <strong>who is in the game</strong>. Solo passes outright. Anything
+    else has to hold nothing but you and registered co-authors.
+  </p>
+
+  <div class="note">
+    <p class="panel-h">Practical consequences for you</p>
+    <ul style="margin-bottom:0">
+      <li>Test builds run <strong>solo</strong>, or in a match holding
+          <strong>nobody but you and your registered co-authors</strong>. Nowhere
+          else. How you arrange that lobby is your business: the guard never looks at
+          the lobby type, because it cannot.</li>
+      <li>Functions the guards generate all start <code>__t9_</code>. Seeing them in a
+          decompile of your own test build is this, not your code.</li>
+      <li><strong>Never paste them into your source.</strong> The security scanner
+          flags it, because shipping the test guard would kick people who joined your
+          published mod.</li>
+      <li>Every guarded function waits on the session state before doing anything, so a
+          test build has a slightly different timing profile from a released one. If
+          something is timing-critical, that is worth remembering.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== COAUTHOR ===================== -->
+<section id="coauthor">
+  <h2>Testing with co-authors</h2>
+  <div class="rule"></div>
+
+  <p>
+    Two people cannot test one unreleased mod together unless the guard knows who they
+    are. Setting that up is four steps:
+  </p>
+
+  <ol>
+    <li><strong>The owner invites</strong> from COLLABORATORS on the project card.</li>
+    <li><strong>The invited person accepts</strong>, in their own launcher. Being
+        made co-author of somebody else&#39;s mod is a thing that happens to you, not
+        something that can be asserted about you.</li>
+    <li><strong>Each co-author presses LINK MY ACTIVISION ACCOUNT</strong>, with Cold
+        War running and signed in. It takes a few seconds and marks their row LINKED.</li>
+    <li><strong>The owner reopens COLLABORATORS</strong> (that is what fetches the
+        current list) and rebuilds. The new build recognises everyone who has
+        linked.</li>
+  </ol>
+
+  <p>
+    Then: the host is always allowed and never needs to register, a recognised co-author
+    can join at any point (including late), and anybody else who joins ends the session.
+  </p>
+
+  <div class="note">
+    <p class="panel-h">What is stored</p>
+    <p>Only a one-way hash of the account id, never the id itself, and never a name. It
+    is stored in your project and in the mod&#39;s published record, and it is what the
+    guard compares against. Nothing identifying appears in the compiled script, so it is
+    also not something a decompile of your test build gives away.</p>
+  </div>
+</section>
+
+<!-- ===================== CONSOLE ===================== -->
+<section id="console">
+  <h2>The console log</h2>
+  <div class="rule"></div>
+
+  <p>
+    MOD TOOLS can show Cold War&#39;s own console output in a CONSOLE LOG tab, which is
+    the closest thing to a real debugger you get. Everything your script prints goes
+    there along with the game&#39;s own output.
+  </p>
+
+  <p>
+    The panel opens on a <strong>running</strong> script, not on a successful load, and
+    that distinction is the whole design: a mid-match load reports success and runs
+    nothing, so &ldquo;we loaded something&rdquo; is not evidence. Each build carries a
+    one-off marker, and the panel stays locked until it sees that exact marker come back
+    out of the game.
+  </p>
+
+  <p>
+    So an empty CONSOLE LOG after a load that said it succeeded is almost always the gate
+    doing its job: you loaded mid-match. Go back to the menu.
+  </p>
+</section>
+
+<!-- ===================== DEBUG ===================== -->
+<section id="debug">
+  <h2>When a mod does nothing</h2>
+  <div class="rule"></div>
+
+  <div class="warn">
+    <p class="panel-h">The retail VM fails silently. Internalise this one.</p>
+    <p>Divide by zero returns zero. A call to a function that does not exist does
+    nothing. Reading a field that is not there gives you <code>undefined</code> and your
+    code carries on with it. Deep recursion dies quietly at around 58 frames. There is
+    exactly <strong>one</strong> loud error: a link failure, a call to a name
+    that resolves to nothing at map load, which is fatal and immediate.</p>
+    <p style="margin-bottom:0">So: if your mod does nothing and nothing is on screen,
+    suspect a name, a hash, or a wrong argument type long before you suspect the
+    launcher.</p>
+  </div>
+
+  <h3>The order to check things in</h3>
+  <ol>
+    <li><strong>Did it run at all?</strong> Put an ungated
+        <code>IPrintLnBold</code> as the first line after your
+        <code>intro_scene_done</code> wait. No print means the script never ran: you
+        loaded mid-match, or a guard refused the lobby.</li>
+    <li><strong>Did it get past the gate?</strong> Print immediately before and after
+        every <code>flag::wait_till</code> and <code>waittill</code>. Waiting forever on
+        something that will never fire is the second most common cause, and it looks
+        exactly like not running at all.</li>
+    <li><strong>Is the value what you think?</strong>
+        <code>IPrintLnBold( "x = " + x )</code>. Almost everything in GSC concatenates
+        into a string, including <code>undefined</code>, which prints as nothing at all. A print that comes out as <code>"x = "</code> has told you something.</li>
+    <li><strong>Is it a hashed-string mismatch?</strong> Passing <code>"name"</code>
+        where <code>#"name"</code> is wanted, or the reverse, silently resolves to
+        nothing. Check what the game&#39;s own callers pass.</li>
+    <li><strong>Is it a name the linker rewrote?</strong> See
+        <a href="#naming">Namespaces, names and traps</a>: a callback registered
+        through a rewritten name compiles clean and never fires.</li>
+  </ol>
+
+  <h3>Printing, properly</h3>
+  <ul>
+    <li><strong><code>IPrintLn</code> for a build log, <code>IPrintLnBold</code> for one
+        fact.</strong> Bold is one line that replaces itself, so a burst of bold prints
+        shows you only the last one.</li>
+    <li><strong>A print reaches the screen on the next server update</strong>, so a crash
+        eats every print made in its own frame. If you are hunting a crash, put a
+        <code>waitframe( 1 )</code> after each diagnostic print. Without it, the
+        last line on screen is a lie about where you got to. That single frame can cover
+        hundreds of calls.</li>
+    <li><strong>Bisect with prints, not with reasoning.</strong> A crash lands later than
+        the call that caused it, sometimes much later. Halving the mod is faster
+        than reading it.</li>
+  </ul>
+
+  <h3>Reading an actual crash</h3>
+  <p>
+    Cold War writes its own crash reports to
+    <code>%LOCALAPPDATA%\Activision\Call Of Duty Black Ops Cold War\crash_reports\</code>
+    as zips. The <code>info.json</code> inside names the map, the mode and a crash
+    signature, and that is usually enough: <strong>the same signature on two different
+    maps means the same engine call with a different asset</strong>, which points straight
+    at something you named that this map does not have.
+  </p>
+</section>
+
+<!-- ===================== LIFECYCLE ===================== -->
+<section id="lifecycle">
+  <h2>Cookbook: timing and lifecycle</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Every entry in this cookbook was paid for by something that did not work in game.
+    Start here, because more mods are broken by <em>when</em> they ran than by what they
+    did.
+  </p>
+
+  <h3>Your script loads during the loading screen</h3>
+  <p>
+    <code>autoexec</code> runs as the map comes up, before any client is listening and
+    before most of the game&#39;s own state exists. Everything you do in that window is
+    at risk:
+  </p>
+  <ul>
+    <li><strong>Prints are thrown away.</strong> Nobody is there to receive them.</li>
+    <li><strong>One-shot events are thrown away</strong> for the same reason. See
+        <a href="#fx">Effects</a>, where this is the whole explanation for &ldquo;my
+        effects never render&rdquo;.</li>
+    <li><strong>State you read may not exist yet.</strong> Weapon tables, zone tables,
+        spawn structs and player entities all populate on their own schedule.</li>
+  </ul>
+
+  <p>So the shape of every mod is the same: thread out of <code>autoexec</code>, wait,
+  then work.</p>
+
+<pre><span class="k">function autoexec</span> main()
+{
+    <span class="k">if</span> ( <span class="k">isdefined</span>( level.my_mod ) ) <span class="k">return</span>;   <span class="c">// loaded twice</span>
+    level.my_mod = 1;
+
+    level thread run();
+}
+
+<span class="k">function private</span> run()
+{
+    level flag::wait_till( <span class="m">#"intro_scene_done"</span> );
+
+    <span class="c">// from here on the match is real</span>
+}</pre>
+
+  <h3>The flags you will use most</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Flag</th><th>Means</th></tr></thead>
+    <tbody>
+      <tr><td><code>#"intro_scene_done"</code></td><td>The opening is over and players are in control. <strong>Your default gate.</strong></td></tr>
+      <tr><td><code>#"start_zombie_round_logic"</code></td><td>Round logic is about to begin.</td></tr>
+      <tr><td><code>#"solo_game"</code></td><td>One player. Useful for behaviour that only makes sense alone.</td></tr>
+      <tr><td><code>"spawn_zombies"</code></td><td>Not a gate, but a valve. <a href="#zombies">Clear it to pause spawning.</a></td></tr>
+      <tr><td><code>#"all_players_connected"</code></td><td>Everybody who is coming has arrived.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Doing something to every player, including late joiners</h3>
+  <p>
+    <code>getplayers()</code> at one moment is a snapshot, and in co-op it is usually the
+    wrong one. Register a connect callback as well, and you cover both.
+  </p>
+
+<pre><span class="k">#using</span> scripts\core_common\callbacks_shared.gsc;
+
+<span class="k">function private</span> run()
+{
+    level flag::wait_till( <span class="m">#"intro_scene_done"</span> );
+
+    <span class="k">foreach</span> ( player <span class="k">in</span> getplayers() )
+    {
+        player thread setup_player();
+    }
+
+    callback::on_connect( &amp;on_connect );
+}
+
+<span class="k">function private</span> on_connect()
+{
+    self thread setup_player();
+}
+
+<span class="k">function private</span> setup_player()
+{
+    self endon( <span class="m">#"disconnect"</span> );
+
+    <span class="c">// ... your per-player work ...</span>
+}</pre>
+
+  <div class="warn">
+    <p class="panel-h">Do not name a local function the same as the callback you register</p>
+    <p>The example above is deliberately <code>on_connect</code> registering
+    <code>&amp;on_connect</code> in a file that declares it, which is exactly the
+    <a href="#naming">shape that silently breaks</a> when the qualified form
+    <code>callback::on_connect</code> is used with a same-named local. Written as above
+    (unqualified <code>callback::</code> import, local named differently from anything you
+    call through <code>::</code>) it is fine. If you ever write
+    <code>callback::on_ai_killed( &amp;on_ai_killed )</code> next to
+    <code>function on_ai_killed()</code>, rename yours.</p>
+  </div>
+
+  <h3>Deleting an entity kills the thread it is called from</h3>
+  <p>
+    <code>entity delete()</code> frees the entity <em>and</em> terminates every thread
+    whose <code>self</code> it is. So this never reaches its second line:
+  </p>
+
+<pre>self delete();
+level thread do_the_thing();   <span class="c">// NEVER RUNS</span></pre>
+
+  <p>
+    Start the follow-up first, and retire the model with <code>deletedelay()</code>
+    (end of frame) rather than <code>delete()</code>. That is what the game&#39;s own
+    &ldquo;consume this prop and spawn something&rdquo; flows do, and it is worth
+    treating as the rule for any such pair. The visible half (effect, sound) fires
+    either way, so the bug looks like &ldquo;the second half never happened&rdquo; with
+    nothing to point at.
+  </p>
+</section>
+
+<!-- ===================== PLAYERS ===================== -->
+<section id="players">
+  <h2>Cookbook: players</h2>
+  <div class="rule"></div>
+
+  <h3>Freezing, hiding the HUD, disabling things: use <code>val::</code></h3>
+
+  <p>
+    <code>scripts\core_common\values_shared.gsc</code>, namespace <code>val</code>, is a
+    <strong>reference-counted</strong> way to set player state, keyed by a
+    <em>cause</em>. This matters more than it sounds: the game freezes controls on spawn,
+    freezes them again for the black screen, and quest scenes freeze them a third time.
+    A bare <code>freezecontrols( 0 )</code> releases somebody else&#39;s lock, and a bare
+    HUD-visibility call puts back a HUD another system deliberately hid.
+  </p>
+
+<pre><span class="k">#using</span> scripts\core_common\values_shared.gsc;
+
+self val::set( <span class="m">#"my_mod"</span>, <span class="s">"freezecontrols"</span>, 1 );
+self val::set( <span class="m">#"my_mod"</span>, <span class="s">"show_hud"</span>, 0 );
+
+<span class="c">// give it all back - one call, no matching list to maintain</span>
+self val::reset_all( <span class="m">#"my_mod"</span> );</pre>
+
+  <p>The names you will reach for:</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Value</th><th>Effect</th></tr></thead>
+    <tbody>
+      <tr><td><code>freezecontrols</code></td><td>Full freeze</td></tr>
+      <tr><td><code>freezecontrols_allowlook</code></td><td>Frozen but can look around</td></tr>
+      <tr><td><code>show_hud</code></td><td>The whole HUD</td></tr>
+      <tr><td><code>show_weapon_hud</code>, <code>show_crosshair</code>, <code>show_compass</code></td><td>Pieces of it</td></tr>
+      <tr><td><code>disable_usability</code></td><td>Cannot interact with anything</td></tr>
+      <tr><td><code>disable_weapons</code>, <code>disable_offhand_weapons</code></td><td>No shooting / no equipment</td></tr>
+      <tr><td><code>hide</code></td><td>Invisible</td></tr>
+      <tr><td><code>allow_jump</code>, <code>allow_melee</code>, ...</td><td>One movement ability each</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ok">
+    <p class="panel-h">Pick one cause id and use it everywhere in your mod</p>
+    <p>Then <code>reset_all</code> under that id restores everything you ever set, and
+    your set-list can grow without a matching restore list to keep in step.</p>
+  </div>
+
+  <h3>Points and currency</h3>
+  <p>
+    Set points through the score system, not by writing the field. A player&#39;s score
+    lives in two places, and writing only the visible one loses the value the moment they
+    go down:
+  </p>
+
+<pre><span class="k">#using</span> scripts\zm_common\zm_score.gsc;
+
+player zm_score::function_c1f146ff( 25000 );     <span class="c">// sets score AND the persistent copy</span>
+
+<span class="k">if</span> ( player zm_score::can_player_purchase( cost ) )
+{
+    player zm_score::minus_to_player_score( cost );
+}</pre>
+
+  <p>
+    <strong>Salvage is map-specific.</strong> Only some maps load the salvage system at
+    all, so its fields are simply undefined elsewhere. Test with <code>isdefined</code> instead of inventing a currency the map has no use for.
+  </p>
+
+  <h3>Weapons</h3>
+
+<pre><span class="k">#using</span> scripts\zm_common\zm_weapons.gsc;
+
+w = getweapon( <span class="m">#"ray_gun"</span> );
+
+<span class="k">if</span> ( w !== level.weaponnone )                       <span class="c">// it resolved</span>
+{
+    <span class="k">if</span> ( player zm_weapons::has_weapon_or_upgrade( w ) )
+    {
+        player zm_weapons::ammo_give( w );
+    }
+    <span class="k">else</span>
+    {
+        player zm_weapons::weapon_give( w, 0, 1, <span class="k">undefined</span>, <span class="k">undefined</span>, <span class="m">#"white"</span> );
+    }
+}</pre>
+
+  <ul>
+    <li><strong>Do not reimplement <code>zm_weapons::get_guns()</code></strong>. Call it. A hand-written copy of its filter gets the edge cases wrong, and note
+        that its list <em>keeps field upgrades</em>, which you usually want to drop.</li>
+    <li><strong>Iterate <code>level.zombie_weapons</code> by value</strong>
+        (<code>foreach ( s in ... )</code>), never through <code>getarraykeys</code>.
+        Each entry carries <code>.weapon</code>, <code>.cost</code>, <code>.hint</code>,
+        <code>.weapon_classname</code> and <code>.is_wonder_weapon</code>.</li>
+    <li><strong>Every wonder weapon is loaded on every zombies map</strong>, and you can
+        register one on a map it does not normally appear on, but
+        <a href="#cant">its audio will be missing</a> and that cannot be fixed from
+        script.</li>
+  </ul>
+
+  <div class="note">
+    <p class="panel-h">Give a player an item through the inventory, not by dropping one at their feet</p>
+    <p>Dropping a world item near a player produces something that frequently never
+    becomes pickupable. The route that works is the inventory path the game uses itself:
+    resolve the item entry, ask how many are held, set the amount, resolve the slot, and
+    hand it over. It is more calls, and it is the difference between a mod that works and
+    one that works on your machine.</p>
+  </div>
+
+  <h3>Two gotchas that look like your code being wrong</h3>
+  <ul>
+    <li><strong>The mystery box notifies <em>before</em> it gives.</strong> The
+        &ldquo;player grabbed a weapon&rdquo; notify fires and only then does the give
+        thread start, so for the next second
+        <code>getcurrentweapon()</code> is still the gun they walked up holding. A check
+        that judges the first frame and returns misses every box grab. Poll the whole
+        delivery window. (The wall-buy notify is the opposite: it fires after the give.)</li>
+    <li><strong>The perk-machine gate is <code>self.num_perks</code>, and the vending
+        path never touches it.</strong> Buying perks from machines leaves it at zero on a
+        vanilla player, by design. Any mod that &ldquo;keeps the count honest&rdquo; by
+        setting it to the number of perks held silently kills <em>every</em> vending
+        machine: the prompt still shows, the purchase is denied. Leave it
+        alone.</li>
+  </ul>
+</section>
+
+<!-- ===================== WORLD ===================== -->
+<section id="world">
+  <h2>Cookbook: putting things in the world</h2>
+  <div class="rule"></div>
+
+  <h3>A model and a use prompt: the primitive that works</h3>
+  <p>
+    Spawn a <code>script_model</code>, put a <code>trigger_radius_use</code> in front of
+    it, and hang a callback on the trigger. That is what the game&#39;s own interactable
+    machines are, and it works from an injected script on any map.
+  </p>
+
+<pre><span class="k">#using</span> scripts\core_common\callbacks_shared.gsc;
+
+model = spawn( <span class="s">"script_model"</span>, origin );
+model setmodel( <span class="m">#"p9_fxanim_zm_gp_armor_station_xmodel"</span> );
+model.angles = angles;
+
+<span class="c">// 24 units forward of the model, 50 up; radius 64, height 128</span>
+trigger = spawn(
+    <span class="s">"trigger_radius_use"</span>,
+    origin + anglestoforward( angles ) * 24 + ( 0, 0, 50 ),
+    0, 64, 128
+);
+
+trigger.scriptmodel = model;
+trigger setcursorhint( <span class="s">"HINT_NOICON"</span> );
+trigger sethintstring( <span class="m">#"hash_614130df578d98f0"</span> );
+trigger setvisibletoall();
+
+trigger thread watch_use();</pre>
+
+  <div class="warn">
+    <p class="panel-h">Do not build these as unitriggers</p>
+    <p>The unitrigger system builds a real trigger per player, and only when that player
+    <strong>changes zone into</strong> the one the stub belongs to. A stub whose zone is
+    unset, or whose zone nobody crosses into, silently never becomes a trigger, forever, with no error. Measured in game: three plain <code>trigger_radius_use</code>
+    machines appeared, and ten wall weapons built exactly per the game&#39;s own dynamic-wallbuy
+    recipe appeared as nothing at all, because nobody changes zone in the room they are
+    already standing in. Use plain triggers unless you have a specific reason not to.</p>
+  </div>
+
+  <p>
+    For a weapon prompt, <code>setcursorhint( "HINT_WEAPON", w )</code> is what draws the
+    weapon name and icon, not the hint string.
+  </p>
+
+  <h3>The four Outbreak-style stations work on every zombies map</h3>
+  <p>
+    Wunderfizz, the armor station and the weapon station (Pack-a-Punch level, rarity and
+    ammo mods) are all spawnable from script on any zombies map. Their models are in the
+    shared zombies asset table, and the LUI menu each one opens is registered on every
+    zombies map even though only Outbreak spawns them.
+  </p>
+  <p>
+    <strong>The weapon station is the whole Pack-a-Punch answer</strong> for a mod that
+    wants one somewhere new: relocating a classic map&#39;s own PaP means moving an
+    animated barrier wired into that map&#39;s power and quest state, and the station is
+    not. Guard each one on the menu handle it needs rather than assuming it exists.
+  </p>
+
+  <h3>Placing something so it is actually reachable</h3>
+  <p>
+    Picking a spot is harder than it looks, and every rule here comes from a machine that
+    ended up inside a rock, under the map, or off a ledge.
+  </p>
+
+  <ul>
+    <li><strong>A walk test answers &ldquo;could you walk here&rdquo;, never &ldquo;does
+        the thing fit&rdquo;.</strong> It is one line at one height: a tree trunk 30
+        units to the side is never touched, and a rock lower than the trace height is
+        walked straight over. A claimed spot needs a <strong>clear cylinder</strong>: 8 bearings &times; 3 heights (ankle, waist, head) out to the radius your
+        model needs. A trace that starts inside geometry returns zero, so the same sweep
+        also catches &ldquo;this spot is inside a rock&rdquo;, which nothing else
+        detects.</li>
+    <li><strong>Probe downward from well above.</strong> A ground trace that starts only
+        a little above an <em>estimated</em> height starts inside solid when the real
+        surface is higher (a kerb, a slab, a sloped yard) and does not stop
+        at the surface over its head. It finds the next floor <em>down</em>. That is how
+        a placed object ends up in the basement. Start ~96 units up, and
+        <strong>refuse</strong> a hit more than one step below your reference rather than
+        trusting it.</li>
+    <li><strong>Try a bearing sweep and a list of distances</strong>, not one bearing and
+        one distance. Keep every claimed spot in one array with a minimum-separation
+        test. Two 64-radius use triggers 45&deg; apart end up inside one
+        another.</li>
+    <li><strong>Ask the game whether a point is playable</strong> with
+        <code>zm_utility::check_point_in_playable_area( origin )</code> rather than
+        inventing your own bounds, and get a zone name with
+        <code>zm_zonemgr::get_zone_from_position( origin, 1 )</code>.</li>
+  </ul>
+
+  <div class="note">
+    <p class="panel-h">Do not refuse a spot just because you cannot name its zone</p>
+    <p>Spawn structs do not all carry a zone name, and code that returns &ldquo;no&rdquo;
+    when it cannot identify one refuses <em>every</em> spot on any map that does not
+    populate that field, which reads in game as your placement code silently doing
+    nothing, on every map, forever. Fall back to the playable-area test.</p>
+  </div>
+
+  <h3>Locking players in, and other blunt instruments</h3>
+  <ul>
+    <li><strong>To lock doors, disable the triggers. Do not price them.</strong> If your
+        mod also hands out points, every price is affordable. And a door usually has a
+        trigger on <em>each side</em>. Disabling one leaves the other buyable, so
+        walk the siblings too.</li>
+    <li><strong>To pause the rounds</strong>, clear the <code>"spawn_zombies"</code>
+        flag. The game&#39;s own round logic waits on it every pass and the maps&#39;
+        quests clear it for scripted moments, so it is a pause the game already knows how
+        to take. The round cannot end while it is clear.</li>
+  </ul>
+</section>
+
+<!-- ===================== FX ===================== -->
+<section id="fx">
+  <h2>Cookbook: effects, models and sound</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    &ldquo;My effects never render&rdquo; is the most common thing a new CW mod runs
+    into, and it has one cause and two fixes.
+  </p>
+
+  <h3>Why a one-shot effect vanishes</h3>
+  <p>
+    <code>playfx</code> is an <strong>event</strong>. <code>spawnfx</code> is an
+    <strong>entity</strong>. Your mod loads during the loading screen, before any client
+    is listening, and an event is not resent to a client that arrives later. A
+    model, by contrast, is replicated in every snapshot, which is why models always show
+    up and effects appear not to work at all.
+  </p>
+
+  <p>Two fixes, in order of preference.</p>
+
+  <h4>1. Set a clientfield, do not name an asset</h4>
+  <div class="ok">
+    <p class="panel-h">The general answer for any effect from an injected script</p>
+    <p>The powerup effect field is registered in <strong>both</strong> VMs and in the
+    shared zombies scripts, so it exists on every zombies map. A powerup is nothing more
+    than a <code>script_model</code> with <code>setmodel( #"tag_origin" )</code> and that
+    field set to a small integer. The <em>map&#39;s own client script</em> then picks the
+    asset, plays it on the tag and keeps the handle, so <strong>it loops</strong>,
+    there is nothing for you to resolve, and because a clientfield is replicated
+    <em>state</em> rather than an event it also reaches a player who was still loading.</p>
+    <p style="margin-bottom:0">Values <strong>1 and 2 only</strong>. Higher values read
+    effects registered inside a conditional, and an undefined effect handed to the
+    client&#39;s play call faults on every machine.</p>
+  </div>
+
+  <h4>2. Use the looping-fx primitive</h4>
+<pre>h = spawnfx( <span class="m">#"my/effect"</span>, origin, forward, up );
+waitframe( 1 );
+triggerfx( h );</pre>
+  <p>
+    That is the game&#39;s own Radiant looping-effect pattern, and it produces a real entity that persists instead of an event that is missed.
+  </p>
+
+  <h3>Naming an effect that is not there</h3>
+  <div class="warn">
+    <p class="panel-h">One of these is silent and the other crashes the game</p>
+    <p><code>playfx</code> on a missing effect <strong>silently does nothing</strong>.
+    <code>spawnfx</code> on a missing effect <strong>dereferences the null</strong> and
+    takes the game with it. So &ldquo;playfx rendered nothing&rdquo; usually means the
+    asset is not on this map, not that the event was lost, and reaching for
+    <code>spawnfx</code> to fix it turns a silent failure into a crash.</p>
+  </div>
+
+  <ul>
+    <li><strong>The only effects a server script can rely on are the ones in
+        <code>level._effect</code>.</strong> Not &ldquo;in the map&#39;s asset
+        table&rdquo;. That says the asset is loaded, not that script can name it.</li>
+    <li><strong><code>fx::get</code> is no help as a test.</strong> It returns the key it
+        was given when the key is missing, so an unregistered effect comes back as a
+        plausible-looking value that names nothing.</li>
+    <li><strong>Effect names are hashes, not strings.</strong> Passing a plain string
+        where a hash is expected is one of the two classic ways a perfectly correct effect
+        call does nothing.</li>
+  </ul>
+
+  <h3>Asset tables are hints, not inventories</h3>
+  <p>
+    The shared zombies asset table lists content across <em>all</em> zombies modes,
+    Outbreak included, so a row in it does not prove the asset is on the map you are
+    testing. And the per-map tables are not the whole truth either: every powerup
+    effect the client plays is in none of them, and powerups obviously drop everywhere.
+    <strong>Treat both as hints. The only proof is a call that worked in game.</strong>
+  </p>
+
+  <h3>Models</h3>
+  <ul>
+    <li><strong>Server-side <code>attach</code> on an actor replicates</strong>, so
+        cosmetics you might reach for a client script for can often be done server-side
+        instead. The game&#39;s own zombie armour does exactly this.</li>
+    <li><strong>A model the map never loaded is invisible</strong>, with a working prompt
+        and a working trigger. If your machine has a hint and no machine, that is what
+        happened. Prefer models from the shared zombies table.</li>
+    <li><strong>Effect prop models are not placeable geometry.</strong> Models whose
+        names mark them as an effect&#39;s own props are loaded because the effect that
+        places and animates them needs them. Spawned by hand they are a shape with
+        no light, no depth and no motion.</li>
+  </ul>
+
+  <h3>Sound</h3>
+  <p>
+    Weapon audio lives in per-map sound banks, and <strong>there is no
+    load-a-sound-bank builtin anywhere in the game</strong>. A script can name a weapon
+    the map does not normally have, and its model will resolve, but its sounds will not
+    exist and nothing you can write will make the engine load them. This is the same wall
+    as custom models: script can name an asset, it cannot ship one.
+  </p>
+</section>
+
+<!-- ===================== ZOMBIES ===================== -->
+<section id="zombies">
+  <h2>Cookbook: zombies and rounds</h2>
+  <div class="rule"></div>
+
+  <div class="warn">
+    <p class="panel-h">Never enumerate AI, and never register for AI spawn events</p>
+    <p><code>getaiarray()</code> and an <code>on_ai_spawned</code> registration
+    <strong>hard-crash Cold War</strong> from an injected script. The crash lands later
+    than the call that caused it, so it will not look like it came from there, which is why it is better to know this before you write it than after. The editor&#39;s linter flags both.</p>
+  </div>
+
+  <h3>Hooking every zombie as it spawns</h3>
+  <p>
+    There is a free per-zombie spawn hook on <code>level</code> that the zombie spawn
+    path reads and <strong>nothing that ships ever writes</strong>. It is the safe
+    replacement for the spawn callback:
+  </p>
+
+<pre>level.var_9c55db3 = &amp;on_zombie_spawned;
+
+<span class="k">function private</span> on_zombie_spawned()
+{
+    <span class="c">// self is the zombie</span>
+    self.maxhealth = 500;
+    self.health    = 500;
+}</pre>
+
+  <p>
+    Note it is <em>level</em>-scoped. There is a similar-looking variable beside it that
+    lives on <code>game</code> and therefore survives into the next map as a dangling
+    pointer. Use the level one.
+  </p>
+
+  <h3>Hooking damage</h3>
+  <p>
+    <code>zm::register_actor_damage_callback</code> appends at runtime, so it is safe to
+    add from an injected script. <strong>Return <code>-1</code> to leave the damage
+    alone</strong>. Any other value overrides it. Piggybacking damage is also the
+    practical substitute for a spawn callback when you need to touch a zombie that was
+    already alive.
+  </p>
+
+  <h3>Spawning a zombie somewhere specific</h3>
+  <p>Two things must be right or you get nothing, or a zombie that appears and vanishes.</p>
+
+  <ul>
+    <li><strong>The spawner needs its force-spawn key set.</strong>
+        <code>spawn_zombie</code> tests it first and returns having spawned nothing. It is a map key, not something the shipped scripts set. Set it on the
+        spawner you are about to use, and try a few spawners.</li>
+    <li><strong>Pass the spawn point as the <em>third argument</em>, and do not teleport
+        afterwards.</strong> Every zombie runs its spawn think as it appears, which picks
+        a spot from the map&#39;s zombie locations and drags the AI there, so a
+        zombie you placed and then let spawn gets relocated out from under you. The
+        location is claimed on the first call and every later call is ignored, so win the
+        race by passing it in. A bare <code>spawnstruct()</code> with
+        <code>.origin</code> and <code>.angles</code> and <strong>no</strong>
+        <code>script_noteworthy</code> takes the arbitrary-point branch, which is the
+        game&#39;s own way of putting a zombie exactly where you want it. A struct that
+        <em>does</em> carry a <code>script_noteworthy</code> matches nothing and does not
+        move at all, which is where the &ldquo;invisible zombie&rdquo; reading
+        comes from.</li>
+  </ul>
+
+  <p>
+    Keep <code>forceteleport</code> only as an after-the-fact correction, gated on a
+    bounded wait for the spawn-complete notify.
+  </p>
+
+  <h3>Rounds</h3>
+  <ul>
+    <li><strong>Pause spawning</strong> by clearing the <code>"spawn_zombies"</code>
+        flag. The round cannot end while it is clear, because the remaining count never
+        drains.</li>
+    <li><strong>Do not try to clear out zombies that are already alive.</strong>
+        Enumerating them means <code>getaiarray</code>, and that crashes. Design around
+        it: pause spawning and let the round drain, or kill through a damage callback.</li>
+    <li><strong>Round health and count scale from level variables</strong> the game sets
+        each round. Write them after the round has started, not before, or the
+        round logic overwrites you.</li>
+  </ul>
+
+  <h3>Main quests</h3>
+  <p>
+    A quest&#39;s step state is ordinary script state, so a mod can move it, but
+    each map keeps it differently and the steps have side effects the game expects to
+    have run. Read the map&#39;s own quest script before moving anything, and expect to
+    have to set up what an earlier step would have created.
+  </p>
+</section>
+
+<!-- ===================== CANT ===================== -->
+<section id="cant">
+  <h2>What you cannot do</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Every item here was tried in game and does not work. They are collected in one place
+    so you can check before spending an evening, and most of them are the same fact
+    wearing a different hat: <strong>the game seals what it can load when the map
+    loads, and your script arrives after that.</strong>
+  </p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Not possible</th><th>Why, and what to do instead</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Register a clientfield or client UI model</strong></td>
+        <td>The manifest is sealed at map load. Late registration (server side,
+            client side, or both halves in the same load) produces a
+            <strong>&ldquo;Clientfield mismatch&rdquo; kick</strong> for everyone. There
+            is no ordering, no timing and no pairing that works.
+            <em>Set</em> an existing field instead. That is safe and is how the two sides
+            talk.</td>
+      </tr>
+      <tr>
+        <td><strong>Flip a gametype setting that gates a clientfield registration</strong></td>
+        <td>Same kick, arrived at sideways: the host registers a field the joiners do
+            not. Worse, the setting <strong>persists into later matches</strong>, so it
+            keeps kicking after you stop loading the mod. A game restart is the
+            only cure. The security scanner flags the known ones.</td>
+      </tr>
+      <tr>
+        <td><strong>Add a model, sound, effect, animation or weapon asset</strong></td>
+        <td>There is no asset pipeline and no way to make the retail game load one. A
+            script can <em>name</em> anything the map already loaded, and nothing
+            else.</td>
+      </tr>
+      <tr>
+        <td><strong>Give a cross-map weapon its audio</strong></td>
+        <td>You can register a wonder weapon on a map it does not belong to (the
+            model resolves, the item works), but its sounds live in that other
+            map&#39;s sound bank and no builtin loads one. It will be silent, and that
+            cannot be fixed from script.</td>
+      </tr>
+      <tr>
+        <td><strong>A custom powerup HUD icon</strong></td>
+        <td>The powerup row&#39;s UI only draws slots wired through the clientfield
+            registration path, which is sealed. Writing the UI models directly executes
+            and renders nothing. The ceiling is to borrow a live slot from the server side: wrong icon, real countdown.</td>
+      </tr>
+      <tr>
+        <td><strong>Ship UI (LUI/Lua) of your own</strong></td>
+        <td>No way to ship UI files. UI work is limited to what GSC can drive on menus
+            the game already has.</td>
+      </tr>
+      <tr>
+        <td><strong>Maps, prefabs, Radiant, zone files</strong></td>
+        <td>None of it exists for Cold War. Anything you place, you place from script at
+            runtime.</td>
+      </tr>
+      <tr>
+        <td><strong>Call between the two VMs</strong></td>
+        <td>An injected <code>.gsc</code> and an injected <code>.csc</code> share nothing
+            but already-registered clientfields. Derive what you need locally on each
+            side.</td>
+      </tr>
+      <tr>
+        <td><strong><code>getaiarray()</code> / <code>on_ai_spawned</code></strong></td>
+        <td>Hard crash. Use the <a href="#zombies">level spawn hook</a> and the damage
+            callback.</td>
+      </tr>
+      <tr>
+        <td><strong>Survive a map load</strong></td>
+        <td>Your mod is gone. Re-load it from the pre-game menu. Nothing you write can
+            persist across it.</td>
+      </tr>
+      <tr>
+        <td><strong>Tell a public match from a private one</strong></td>
+        <td>Measured in game, twice: a real Private-mode co-op lobby reports exactly
+            what a matchmade one does on every session builtin there is. So a script
+            cannot branch on lobby type, and neither can the launcher. Ask who is in
+            the game instead. <a href="#guards">The test guard</a> is built on that,
+            and it is why there is no public-match block.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ===================== SUBMIT ===================== -->
+<section id="submit">
+  <h2>Submitting your mod</h2>
+  <div class="rule"></div>
+
+  <div class="flow">
+    <div class="step"><span class="n">YOU</span><b>SUBMIT MOD</b><span class="d">Scans your files, links, compiles without the test guard, packages, uploads.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">REVIEW</span><b>A moderator reads it</b><span class="d">Your source and the scan report, in a private review channel.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">APPROVED</span><b>Approved and published</b><span class="d">Your package and its picture go into the published list.</span></div>
+    <div class="arrow">&rarr;</div>
+    <div class="step"><span class="n">PLAYERS</span><b>In the library</b><span class="d">It appears for everyone, downloadable from its own card.</span></div>
+  </div>
+
+  <h3>What is in the page, and what each field is for</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Field</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Project</strong></td><td>First, because everything below describes that project. Picking one pre-selects its thumbnail and its tags.</td></tr>
+      <tr><td><strong>Thumbnail</strong></td><td>Square. Whatever you submit is copied back into the project, so the two stay in step. It is shown to players who have not downloaded the mod, so it is doing real work.</td></tr>
+      <tr><td><strong>Title</strong></td><td>Max 30 characters. It does not have to be unique, and renaming your project later does not disconnect it from your published mod.</td></tr>
+      <tr><td><strong>Author name</strong></td><td>Credit, not identity. It becomes the name players see. Your account still decides who owns the mod and who may update it, so this can never reach anyone else&#39;s mod.</td></tr>
+      <tr><td><strong>Version</strong></td><td>Nothing to fill in. Each upload is stamped with the date and time you submitted it, and that date is what players see.</td></tr>
+      <tr><td><strong>Description</strong></td><td>Ships in the package. This is what every player reads.</td></tr>
+      <tr><td><strong>Changelog</strong></td><td>Updates only. Kept per version behind the CHANGE NOTES button on your mod&#39;s panel, so every release&#39;s notes stay readable. It is the only thing that tells somebody who already has your mod what changed.</td></tr>
+      <tr><td><strong>Tags</strong></td><td>Optional, and you can pick as many as apply. They are what players filter by, so they are worth picking properly.</td></tr>
+      <tr><td><strong>Note for the reviewers</strong></td><td>Appears when the scan found something. Rides in the review post and <strong>nowhere else</strong>. Explain findings here, never in the description.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>The tag vocabulary</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Group</th><th>Tags</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Type</strong></td>
+          <td>Gameplay Overhaul &middot; Difficulty &middot; Quality of Life &middot;
+              Cosmetic / HUD &middot; Utility / Tools &middot; Challenge / Custom Rules</td></tr>
+      <tr><td>Affects</td>
+          <td>Weapons &middot; Wonder Weapons &middot; Perks &middot; Pack-a-Punch &middot;
+              Mystery Box &middot; Wall Buys &middot; Points / Economy &middot;
+              Rounds / Spawning &middot; Zombies / AI &middot; Bosses / Specials &middot;
+              Power-ups &middot; Field Upgrades &middot; Scorestreaks &middot;
+              Armor / Rarity &middot; Salvage / Crafting &middot; Easter Egg / Quest &middot;
+              Player Health / Downs &middot; Movement</td></tr>
+      <tr><td>Maps</td>
+          <td>All Maps &middot; Round-Based Maps &middot; Die Maschine &middot;
+              Firebase Z &middot; Mauer der Toten &middot; Forsaken &middot;
+              Outbreak &middot; Onslaught &middot; Dead Ops Arcade</td></tr>
+      <tr><td>Difficulty</td><td>Easy &middot; Hard &middot; Balanced</td></tr>
+      <tr><td>Play</td><td>Solo &middot; Co-op &middot; Private Match</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p style="color:var(--muted);font-size:13px">
+    Pick more than one in a group where it is true. A mod that is two things
+    should say both. <strong>All Maps</strong> and <strong>Round-Based Maps</strong> stand
+    in for the individual maps when players filter, so you do not need to tick every one.
+  </p>
+
+  <h3>Before you press it</h3>
+  <ul>
+    <li><strong>Updating is not a separate action.</strong> Submitting a project that is
+        already published <em>is</em> an update. It is worked out from the project itself,
+        not its title, so you can rename it freely.</li>
+    <li><strong>The build that ships is not your test build.</strong> Submission compiles
+        your source through its own path, without the test guard, which would kick
+        anyone who joined your published mod.</li>
+    <li><strong>Your package carries source, not a compiled script.</strong> That is
+        deliberate: the settings system needs the source on the player&#39;s machine, and
+        it means what a moderator read is exactly what runs.</li>
+    <li><strong>A locally built package cannot be loaded.</strong> Approval is what makes
+        a package loadable, which is why there is no local packaging page to mislead you
+        into trying.</li>
+    <li><strong>A rejection reaches you in the launcher</strong>, as a popup and in the
+        notification bell, not in the review channel, which is moderators only.</li>
+    <li><strong>Submitting again before a verdict replaces your pending submission</strong> instead of creating a second mod.</li>
+  </ul>
+</section>
+
+<!-- ===================== SCANNER ===================== -->
+<section id="scanner">
+  <h2>The security scanner</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Every submission is scanned for what the mod could do to <em>other players</em>. You
+    can see the report live on SUBMIT MOD before you send anything, and the same rules run
+    again on the review side.
+  </p>
+
+  <h3>Nothing is blocked, but some things are shouted about</h3>
+  <p>
+    A rule marked blocking means <strong>HIGH ALERT</strong>, not STOP. You can always
+    submit. What happens is that the review post gets a red alert naming the file, the
+    line and the code, and the approval is deliberately made harder to give. The reason is
+    honest: several of these calls are hostile in one use and completely ordinary in
+    another, and no pattern match can tell which.
+  </p>
+
+  <h4>What raises a high alert</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Pattern</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Ending the match for everyone (<code>KillServer</code> and its relatives)</td>
+          <td>The single most abusable thing a mod can do.</td></tr>
+      <tr><td>The editor&#39;s test guard, pasted into your source</td>
+          <td>It kicks people. It belongs only in your own test builds, where the
+              launcher puts it.</td></tr>
+      <tr><td>A gametype setting that gates a clientfield registration</td>
+          <td>It kicks every co-op joiner and <a href="#cant">persists into later
+              matches</a>.</td></tr>
+      <tr><td><code>clientfield::register</code> / registering a client UI model</td>
+          <td>Impossible from an injected script on either side, and the failure mode is
+              a kick.</td></tr>
+      <tr><td>A call whose target is built from a runtime hash or string concatenation</td>
+          <td>A call nobody can read is a call nobody can review.</td></tr>
+      <tr><td>Harm applied across every player, or on an indexed player</td>
+          <td>Structural, not a pattern: the shape of a mod that does something to
+              other people rather than to the match.</td></tr>
+      <tr><td>A loop with no <code>wait</code></td>
+          <td>It freezes the game.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note">
+    <p class="panel-h">If you get a finding you believe is fine</p>
+    <p>Explain it in the <strong>NOTE FOR THE REVIEWERS</strong> box. It rides in the
+    review post and nowhere else, not in the description, which ships in the
+    package and is what every player reads. A one-line explanation of why your mod calls
+    the thing it calls is usually all that is wanted.</p>
+  </div>
+
+  <p>
+    Findings carry the <strong>file</strong> they came from, and each script is scanned
+    separately. A line number into a merged script nobody wrote is not a location.
+  </p>
+</section>
+
+<!-- ===================== COLLAB ===================== -->
+<section id="collab">
+  <h2>Collaboration and sync</h2>
+  <div class="rule"></div>
+
+  <p>
+    Two people on one mod work on <strong>one shared copy</strong>. The owner invites from
+    COLLABORATORS on the project card, and the invitation is <em>accepted</em>, in the invited
+    person&#39;s own launcher, before anything is written. It can be revoked at any time.
+  </p>
+
+  <h3>SYNC PROJECT</h3>
+  <p>
+    One press does both directions: pull what the others have done, merge it into yours,
+    then send yours back. It is one operation on purpose. Sending without pulling
+    first is exactly how one person&#39;s next pull quietly removed their own work.
+    GET LATEST FILES is the pull half alone.
+  </p>
+
+  <p><strong>Nothing is ever overwritten.</strong> Every file is merged against a common
+  ancestor, a snapshot of the project as it stood at your last sync:</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Situation</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td>New to you</td><td>Written</td></tr>
+      <tr><td>You have not touched it</td><td>Theirs</td></tr>
+      <tr><td>They have not touched it</td><td>Yours</td></tr>
+      <tr><td>Both changed it</td><td>Three-way merged, and genuine overlaps become conflict markers in the file</td></tr>
+      <tr><td>They deleted it, you had not touched it</td><td>Removed</td></tr>
+      <tr><td>They deleted it, you <em>had</em> changed it</td><td>Kept, and reported</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    Conflicts are left in the text between the markers every programmer already recognises, instead of being resolved by picking a winner. A merge tool that silently
+    chooses is one that silently loses work. Search for <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>
+    after a sync that reported them.
+  </p>
+
+  <ul>
+    <li><strong>A co-author&#39;s update keeps the owner&#39;s name and slot.</strong> Who
+        actually sent it is recorded separately. Only the owner can delete the mod.</li>
+    <li><strong>Sync moves scripts, not identities.</strong> Co-author account
+        registrations for <a href="#coauthor">private testing</a> are never carried by
+        it. They travel through the published record instead.</li>
+    <li><strong>COLLABORATORS needs to be online.</strong> It reads the mod&#39;s
+        published record every time it opens, because that is the only copy of the list
+        that is not written on somebody&#39;s own machine. It says so rather than showing
+        you a stale one.</li>
+  </ul>
+</section>
+
+<!-- ===================== LIBRARY ===================== -->
+<section id="library">
+  <h2>How your mod reaches players</h2>
+  <div class="rule"></div>
+
+  <p>
+    The MODS page is a <strong>catalogue</strong>: it lists every published mod, whether
+    or not it is downloaded. Installed mods sit at the top, and everything else is under
+    AVAILABLE TO DOWNLOAD, split into developer and community releases. So a player sees
+    your mod before they have it, which is why the thumbnail, the title, the
+    description and the tags are worth spending time on.
+  </p>
+
+  <ul>
+    <li><strong>Your card shows</strong> the picture, its star rating, the title, your
+        author name and up to three tags.</li>
+    <li><strong>Your panel shows</strong> the full description, every tag, the mod&#39;s
+        rating opposite the title, the current version with the dates it was first
+        uploaded and last updated, a CHANGE NOTES button holding every release&#39;s
+        changelog, the favourite count, and (once downloaded)
+        <a href="#settings">your settings controls</a>.</li>
+    <li><strong>A rating is per mod, not per version</strong>, and one per person, so
+        it needs a Discord sign-in. An update does not start the score again: a mod is
+        one thing to the people rating it. Your changelog is what says the update is
+        worth another look.</li>
+    <li><strong>The stat that matters is favourites, not downloads.</strong> A download
+        says nothing, but a star is somebody choosing to keep it.</li>
+    <li><strong>Selection order is load order.</strong> If your mod is likely to collide
+        with a common one, saying so in the description saves everybody a support
+        conversation.</li>
+  </ul>
+
+  <p>
+    An update reaches players through the same page: their launcher notices the new
+    version and offers it. Your setting values on their machine survive it, because they
+    are keyed by your mod id, which is one more reason not to rename setting ids
+    between versions.
+  </p>
+</section>
+
+<!-- ===================== RESEARCH ===================== -->
+<section id="research">
+  <h2>Finding out how the game does it</h2>
+  <div class="rule"></div>
+
+  <p class="lede">
+    Almost every question a Cold War mod raises (what is this called, what does it
+    take, when does it fire) is answered by reading the game&#39;s own scripts.
+    There is a full decompiled dump of them, and knowing how to work it is the single
+    most useful skill in T9 modding.
+  </p>
+
+  <h3>The dump</h3>
+  <p>
+    <a href="https://github.com/ate47/bocw-source">github.com/ate47/bocw-source</a> is
+    Cold War&#39;s script and data dump. Its shape:
+  </p>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Path</th><th>What is in it</th></tr></thead>
+    <tbody>
+      <tr><td><code>scripts/zm_common/</code></td><td>The shared zombies systems: rounds, perks, powerups, weapons, score, spawning. <strong>Start here.</strong> Anything in it works on every zombies map.</td></tr>
+      <tr><td><code>scripts/zm/</code></td><td>Per-map scripts. Where a specific map&#39;s quest, boss or gimmick lives.</td></tr>
+      <tr><td><code>scripts/core_common/</code></td><td><code>flag_shared</code>, <code>callbacks_shared</code>, <code>values_shared</code>, <code>array_shared</code>, <code>util_shared</code>, the utilities you will <code>#using</code> constantly.</td></tr>
+      <tr><td><code>hashed/</code></td><td>Scripts whose real names were never recovered. Plenty of live content is in here. Do not skip it because the file name is a hash.</td></tr>
+      <tr><td><code>tables/</code>, <code>scriptbundle/</code></td><td>Data. Weapon lists, asset tables, tunables.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>How to actually use it</h3>
+  <ol>
+    <li><strong>Find the thing by its player-visible string.</strong> Search for the hint
+        text a machine shows, the notify name in a wiki, the model name you saw. That
+        lands you in the right file faster than guessing at function names.</li>
+    <li><strong>Read who calls what.</strong> Search the whole tree for the function name.
+        The callers tell you the argument types, what must be true first, and what the
+        game expects to happen afterwards, which is usually the part that breaks
+        a mod.</li>
+    <li><strong>Re-author, do not copy.</strong> Decompiled code is full of
+        <code>function_&lt;hash&gt;</code> names and the occasional artefact. Read it for
+        design and write your own.</li>
+    <li><strong>Recover opaque values from the data.</strong> When decompiled code reads
+        <code>struct.var_&lt;hash&gt;</code>, that field hash is the same hash used as the
+        key in the dumped scriptbundle data, so a tunable that looks unreadable in
+        the script is recoverable from <code>scriptbundle/</code> and
+        <code>tables/</code>.</li>
+  </ol>
+
+  <div class="warn">
+    <p class="panel-h">The dump is not retail, exactly</p>
+    <p>Struct and entity fields in particular do not always match the shipped game. A field the decompile shows being written may simply not be there in the
+    build you are injecting into. Before building on one, <strong>probe it in game</strong>:
+    print an <code>isdefined()</code> for it at the moment you would use it. And probe at
+    the moment the thing is on screen, not at load time. Some fields only populate
+    once it is displayed.</p>
+    <p style="margin-bottom:0">The same goes for the per-map asset tables. They are hints.
+    A call that worked in game is the only proof.</p>
+  </div>
+
+  <h3>Older Treyarch games, when Cold War is unclear</h3>
+  <p>
+    Cold War zombies is built on the codebase of the Treyarch games before it. Their
+    <a href="https://github.com/ate47/bo4-source">decompiled scripts</a> often have the
+    same system with better-recovered names, and they are the reference for &ldquo;how
+    was this done originally&rdquo; when you are recreating classic behaviour. Treat them
+    as ancestors, not as documentation.
+  </p>
+</section>
+
+<!-- ===================== HASHES ===================== -->
+<section id="hashes">
+  <h2>Hashed names</h2>
+  <div class="rule"></div>
+
+  <p>
+    Cold War stores most identifiers as hashes instead of text, so anything the decompile
+    could not resolve to a name appears as a prefix and a hex number:
+    <code>function_9c55db3</code>, <code>var_b8be892e</code>,
+    <code>hash_4751990deae37e66</code>.
+  </p>
+
+  <p>
+    <strong>You can write those names straight into your script.</strong> They are valid
+    identifiers, the compiler understands them, and calling
+    <code>namespace_dd7e54e3::function_fe5f8894()</code> works exactly as it would if you
+    knew what it was called. Plenty of good mods are full of them.
+  </p>
+
+  <div class="note">
+    <p class="panel-h">Which prefix tells you which hash width</p>
+    <p><code>var_</code>, <code>function_</code>, <code>namespace_</code> and
+    <code>event_</code> are the <strong>32-bit</strong> hash.
+    <code>hash_</code>, <code>script_</code> and <code>file_</code> are the
+    <strong>64-bit</strong> one. It matters when you are trying to recover a name: you
+    have to search the right width.</p>
+  </div>
+
+  <h3>HASH FINDER</h3>
+  <p>The fourth MOD TOOLS page, and it does three things:</p>
+  <ul>
+    <li><strong>Name to hash.</strong> Type a guess and see it under every algorithm at
+        once. COPY AS gives you the four spellings you actually type into a script: <code>#"name"</code>, the bare hash, the <code>function_</code> form and
+        the <code>var_</code> form.</li>
+    <li><strong>Hash to name.</strong> Paste anything a decompile wrote (with or
+        without a prefix, with or without <code>0x</code>) and get the name back
+        if it is known.</li>
+    <li><strong>Search the known names.</strong> A full-text search over the T9 names the
+        database has, which is how you find the function you half-remember.</li>
+  </ul>
+  <p>
+    The workflow that matters is the guess-and-check one: you suspect
+    <code>var_b8be892e</code> is something like <code>custom_perks</code>, so you type
+    candidate names on the left and watch for the row on the right to outline green.
+  </p>
+
+  <p style="color:var(--muted);font-size:13px">
+    One trap if you compare against other tools: the common CLI prints the
+    64-bit hash masked, its UI prints it unmasked. The game uses the <strong>masked</strong>
+    value, and that is what HASH FINDER calls XHash. The raw value is offered as a
+    separate row.
+  </p>
+</section>
+
+<!-- ===================== TRIAGE ===================== -->
+<section id="triage">
+  <h2>When something goes wrong</h2>
+  <div class="rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Symptom</th><th>What it means</th></tr></thead>
+    <tbody>
+      <tr><td>Game not detected, or the process cannot be opened</td>
+          <td>Run the launcher as administrator.</td></tr>
+      <tr><td><em>SPT pool is empty (is a map/mode loaded?)</em></td>
+          <td>You loaded too early. Get to the pre-game menu first.</td></tr>
+      <tr><td>It said it succeeded and nothing happened</td>
+          <td>Almost always a mid-match load. The match&#39;s scripts had already
+              linked. Otherwise the test guard refused the lobby.</td></tr>
+      <tr><td><em>BAD MAGIC</em></td>
+          <td>Compiled for the wrong game or VM. Recompile in the app.</td></tr>
+      <tr><td><em>Can&#39;t find target / replaced script</em></td>
+          <td>The mode you are in does not have the script the mod hooks. Zombies modes
+              are the supported set.</td></tr>
+      <tr><td><em>Can&#39;t find xasset pool</em></td>
+          <td>The game patched. The launcher needs updating, nothing you can fix
+              in your mod.</td></tr>
+      <tr><td>Everything gone after a map restart</td>
+          <td>Expected. Loading lasts one map load. Go back to the menu and load
+              again.</td></tr>
+      <tr><td>Prints and early state writes vanish</td>
+          <td>They happened before <code>intro_scene_done</code>.
+              <a href="#lifecycle">Gate them.</a></td></tr>
+      <tr><td>The game hard-crashes</td>
+          <td>Look for <code>getaiarray()</code> or an AI-spawn registration first. Then
+              look for a <code>spawnfx</code> naming an effect this map does not have.
+              The crash lands later than the call, so bisect.</td></tr>
+      <tr><td>Co-op players kicked for &ldquo;Clientfield mismatch&rdquo;</td>
+          <td>Something registered a clientfield late, or a persisted gametype setting is
+              gating one. <strong>Restart the game</strong>. The setting outlives
+              the match.</td></tr>
+      <tr><td>Your mod compiles, loads, and does nothing at all</td>
+          <td>A name. See <a href="#naming">Namespaces, names and traps</a> and
+              <a href="#debug">When a mod does nothing</a>.</td></tr>
+      <tr><td>CONSOLE LOG stays empty after a good load</td>
+          <td>The run gate, working. You loaded mid-match.</td></tr>
+      <tr><td><em>Unable to start the Discord callback server</em></td>
+          <td>Port 80 is taken or needs administrator rights.</td></tr>
+      <tr><td>A <code>.csc</code> loads and does nothing</td>
+          <td>It went in too early, or the client guard refused the lobby. Remember it
+              only affects the machine that loaded it.</td></tr>
+      <tr><td>A machine has a working prompt and no model</td>
+          <td>The model is not loaded on this map. Use one from the shared zombies
+              table.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ===================== FILES ===================== -->
+<section id="files">
+  <h2>Files and folders</h2>
+  <div class="rule"></div>
+
+  <p>Everything sits beside the launcher.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Path</th><th>What it is</th></tr></thead>
+    <tbody>
+      <tr><td><code>Projects/</code></td><td><strong>Your work.</strong> One folder per project, plain and unencrypted. Back this up.</td></tr>
+      <tr><td><code>Projects/&lt;name&gt;/project.json</code></td><td>That project&#39;s title, version and tags.</td></tr>
+      <tr><td><code>Mods/</code></td><td>Downloaded mods. A mirror of what is published, not somewhere to put files by hand.</td></tr>
+      <tr><td><code>.mod_configs.json</code></td><td>Each mod&#39;s setting values, keyed by mod id.</td></tr>
+      <tr><td><code>.mod_presets.json</code></td><td>Presets the player saved themselves. Local only.</td></tr>
+      <tr><td><code>T9ModManager.settings</code></td><td>Launcher settings, INI format.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>Settings keys a modder might want</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Key</th><th>Effect</th></tr></thead>
+    <tbody>
+      <tr><td><code>Editor/Zoom</code></td><td>The editor&#39;s font size, saved whenever you zoom and restored to both panes.</td></tr>
+      <tr><td><code>Editor/Keybinds/*</code></td><td>Your shortcut overrides, one per command. Written by the keybind editor.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ===================== SIDES ===================== -->
+<section id="sides">
+  <h2><code>.gsc</code> vs <code>.csc</code> at a glance</h2>
+  <div class="rule"></div>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th></th><th><code>.gsc</code>: server</th><th><code>.csc</code>: client</th></tr></thead>
+    <tbody>
+      <tr><td>Runs on</td><td>The host only</td><td>Each machine that loaded it</td></tr>
+      <tr><td>Typical job</td><td>Game logic, spawning, damage, rounds, points</td><td>HUD, effects, sound, anything local</td></tr>
+      <tr><td>Players</td><td><code>getplayers()</code></td><td><code>getlocalplayers()</code></td></tr>
+      <tr><td>Most calls</td><td>No client number</td><td>Take <code>localclientnum</code> first</td></tr>
+      <tr><td><code>intro_scene_done</code></td><td>Yes, your default gate</td><td><strong>No</strong>. It is a server flag, so waiting on it hangs forever</td></tr>
+      <tr><td><code>KillServer</code></td><td>Yes</td><td>No, server-only builtin</td></tr>
+      <tr><td>Can call the other side</td><td colspan="2" style="color:var(--red)">Never. Only already-registered clientfields cross between them.</td></tr>
+      <tr><td>Both</td><td colspan="2">One <code>level</code> each, separate. Loaded per map load. Guarded the same way. Compiled from the file extension and nothing else.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<footer>
+  T9 Mod Manager &middot; Modder&#39;s Handbook &middot; Black Ops Cold War
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var nav = document.getElementById('nav');
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+  var groups = Array.prototype.slice.call(nav.querySelectorAll('.grp'));
+
+  /* ---- highlight the section being read ---- */
+  var sections = links.map(function(a){
+    return document.querySelector(a.getAttribute('href'));
+  }).filter(Boolean);
+
+  if ('IntersectionObserver' in window) {
+    var seen = {};
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ seen[e.target.id] = e.isIntersecting; });
+      for (var i = 0; i < sections.length; i++) {
+        if (seen[sections[i].id]) {
+          links.forEach(function(a){ a.classList.remove('on'); });
+          links[i].classList.add('on');
+          break;
+        }
+      }
+    }, { rootMargin: '-10% 0px -75% 0px' });
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  /* ---- filter the contents ---- */
+  var box = document.getElementById('filter');
+  box.addEventListener('input', function(){
+    var q = box.value.trim().toLowerCase();
+    links.forEach(function(a){
+      a.classList.toggle('hide', q !== '' && a.textContent.toLowerCase().indexOf(q) === -1);
+    });
+    groups.forEach(function(g){
+      var any = false, n = g.nextElementSibling;
+      while (n && n.tagName === 'A') {
+        if (!n.classList.contains('hide')) { any = true; break; }
+        n = n.nextElementSibling;
+      }
+      g.classList.toggle('hide', !any);
+    });
+  });
+})();
+</script>
+</body>
+</html>
