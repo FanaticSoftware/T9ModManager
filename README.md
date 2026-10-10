@@ -56,7 +56,7 @@ T9 Mod Manager is for mods that make zombies more fun. Every mod is reviewed by 
 
 | Requirement | Notes |
 | --- | --- |
-| **Windows PC** | The launcher works on the running game, so it has to be the same PC you play on. |
+| **Windows PC** | The launcher works on the running game, so it has to be the same PC you play on. On Linux (Proton/Wine), see [tools/linux](tools/linux/README.md) (community-supported). |
 | **Call of Duty: Black Ops Cold War** | Steam or Battle.net. Console players can join a modded private lobby, but only the PC host loads mods. |
 | **A Discord account** | Optional. Only needed for the mod tools and for rating mods. Downloading and playing mods never asks for it. |
 
