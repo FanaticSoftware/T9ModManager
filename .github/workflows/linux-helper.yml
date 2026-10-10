@@ -1,0 +1,36 @@
+name: Linux helper
+
+on:
+  push:
+    paths: ["tools/linux/**", ".github/workflows/linux-helper.yml"]
+  pull_request:
+    paths: ["tools/linux/**", ".github/workflows/linux-helper.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-22.04, python: "3.8" }   # oldest supported
+          - { os: ubuntu-latest, python: "3.12" }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit tests
+        run: python -m unittest discover -s tools/linux/tests -v
+      - name: CLI smoke test (no game installed, must fail cleanly)
+        run: |
+          python tools/linux/t9mm_linux.py --version
+          set +e
+          python tools/linux/t9mm_linux.py detect --json > out.json
+          rc=$?
+          set -e
+          test "$rc" -eq 1
+          python -c "import json; assert json.load(open('out.json'))['installs'] == []"
